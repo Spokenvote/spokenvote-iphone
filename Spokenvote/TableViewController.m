@@ -93,8 +93,12 @@
     
     Proposal *proposal = [self.proposals objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = proposal.title;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@",blogPost.author,[blogPost formattedDate]];
+    NSDictionary *hubDictionary = proposal.hub;
+    NSString *group_name = [hubDictionary objectForKey:@"group_name"];
+    
+    
+    cell.textLabel.text = proposal.statement;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@",proposal.votes_percentage, group_name];
     
     return cell;
 }
