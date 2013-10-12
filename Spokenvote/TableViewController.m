@@ -8,6 +8,7 @@
 
 #import "TableViewController.h"
 #import "Proposal.h"
+#import "ProposalDetailViewController.h"
 
 @interface TableViewController ()
 
@@ -43,7 +44,9 @@
         Proposal *proposal = [Proposal proposalWithId:[proposalDictionary objectForKey:@"id"]];
         proposal.statement = [proposalDictionary objectForKey:@"statement"];
         proposal.votes_percentage = [proposalDictionary objectForKey:@"votes_percentage"];
+        NSLog(@"%@", proposal.votes_percentage);
         proposal.hub = [proposalDictionary objectForKey:@"hub"];
+        NSLog(@"%@", proposal.hub);
         proposal.votes_count = [proposalDictionary objectForKey:@"votes_count"];
         proposal.votes = [proposalDictionary objectForKey:@"votes"];
         [self.proposals addObject:proposal];
@@ -94,14 +97,36 @@
     Proposal *proposal = [self.proposals objectAtIndex:indexPath.row];
     
     NSDictionary *hubDictionary = proposal.hub;
-    NSString *group_name = [hubDictionary objectForKey:@"group_name"];
+    NSString *short_hub = [hubDictionary objectForKey:@"short_hub"];
     
+    //proposal.votes_percentage
     
     cell.textLabel.text = proposal.statement;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@",proposal.votes_percentage, group_name];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", short_hub];
     
     return cell;
 }
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"preparing for segue: %@",segue.identifier);
+    
+    if ( [segue.identifier isEqualToString:@"showProposalDetail"]){
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Proposal *proposal = [self.proposals objectAtIndex:indexPath.row];
+        
+        NSNumber *proposal_id = proposal.proposal_id;
+        NSString *id_string = [NSString stringWithFormat:@"%@", proposal_id, nil];
+        NSMutableString *url = [NSMutableString stringWithString:@"http://www.spokenvote.org/proposals/"];
+        
+        [url appendString:id_string];
+        
+        ProposalDetailViewController *pdvc = (ProposalDetailViewController *)segue.destinationViewController;
+        NSURL *url_to_carry = [NSURL URLWithString:url];
+        pdvc.proposalURL = url_to_carry;
+        
+    }
+}
+
 
 /*
 // Override to support conditional editing of the table view.

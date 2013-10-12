@@ -26,6 +26,7 @@
 		C2DB187B18090F1600A76511 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB187A18090F1600A76511 /* TableViewController.m */; };
 		C2DB187E1809243300A76511 /* Proposal.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB187D1809243300A76511 /* Proposal.m */; };
 		C2DB18811809278B00A76511 /* Vote.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB18801809278B00A76511 /* Vote.m */; };
+		C2DB1887180955C400A76511 /* ProposalDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB1886180955C400A76511 /* ProposalDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		C2DB187D1809243300A76511 /* Proposal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Proposal.m; path = ../Proposal.m; sourceTree = "<group>"; };
 		C2DB187F1809278B00A76511 /* Vote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vote.h; sourceTree = "<group>"; };
 		C2DB18801809278B00A76511 /* Vote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vote.m; sourceTree = "<group>"; };
+		C2DB1885180955C400A76511 /* ProposalDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProposalDetailViewController.h; path = ../ProposalDetailViewController.h; sourceTree = "<group>"; };
+		C2DB1886180955C400A76511 /* ProposalDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProposalDetailViewController.m; path = ../ProposalDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				C2DB1854180908F700A76511 /* AppDelegate.m */,
 				C2DB187918090F1600A76511 /* TableViewController.h */,
 				C2DB187A18090F1600A76511 /* TableViewController.m */,
+				C2DB1885180955C400A76511 /* ProposalDetailViewController.h */,
+				C2DB1886180955C400A76511 /* ProposalDetailViewController.m */,
 				C2DB187C1809243300A76511 /* Proposal.h */,
 				C2DB187D1809243300A76511 /* Proposal.m */,
 				C2DB1859180908F700A76511 /* Images.xcassets */,
@@ -272,6 +277,7 @@
 				C2DB1858180908F700A76511 /* Spokenvote.xcdatamodeld in Sources */,
 				C2DB1851180908F700A76511 /* main.m in Sources */,
 				C2DB187B18090F1600A76511 /* TableViewController.m in Sources */,
+				C2DB1887180955C400A76511 /* ProposalDetailViewController.m in Sources */,
 				C2DB18811809278B00A76511 /* Vote.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +400,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spokenvote/Spokenvote-Prefix.pch";
 				INFOPLIST_FILE = "Spokenvote/Spokenvote-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -407,6 +414,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spokenvote/Spokenvote-Prefix.pch";
 				INFOPLIST_FILE = "Spokenvote/Spokenvote-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -473,6 +481,7 @@
 				C2DB1873180908F700A76511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2DB1874180908F700A76511 /* Build configuration list for PBXNativeTarget "SpokenvoteTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +490,7 @@
 				C2DB1876180908F700A76511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
