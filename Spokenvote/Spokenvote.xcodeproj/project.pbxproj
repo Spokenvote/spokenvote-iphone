@@ -27,13 +27,27 @@
 		C2DB187E1809243300A76511 /* Proposal.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB187D1809243300A76511 /* Proposal.m */; };
 		C2DB18811809278B00A76511 /* Vote.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB18801809278B00A76511 /* Vote.m */; };
 		C2DB1887180955C400A76511 /* ProposalDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB1886180955C400A76511 /* ProposalDetailViewController.m */; };
-		C2DB18891809830100A76511 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB18881809830100A76511 /* FacebookSDK.framework */; };
 		C2DB188B1809891000A76511 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB188A1809891000A76511 /* Default-568h@2x.png */; };
 		C2DB188F1809892600A76511 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB188C1809892600A76511 /* Default.png */; };
 		C2DB18901809892600A76511 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB188D1809892600A76511 /* Default@2x.png */; };
 		C2DB18911809892600A76511 /* images in Resources */ = {isa = PBXBuildFile; fileRef = C2DB188E1809892600A76511 /* images */; };
 		C2DB189418098E6500A76511 /* SLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB189318098E6500A76511 /* SLViewController.m */; };
 		C2DB18981809AF2800A76511 /* fbimage.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB18971809AF2800A76511 /* fbimage.png */; };
+		C2FD70791809BBEF00FA740A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FD70781809BBEF00FA740A /* FacebookSDK.framework */; };
+		C2FD707E1809C82000FA740A /* sv_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD707C1809C82000FA740A /* sv_icon@2x.png */; };
+		C2FD707F1809C82000FA740A /* sv-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD707D1809C82000FA740A /* sv-icon.png */; };
+		C2FD70811809CA1B00FA740A /* sv-logo_80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD70801809CA1B00FA740A /* sv-logo_80x80.png */; };
+		C2FD70831809CA6300FA740A /* sv-logo_58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD70821809CA6300FA740A /* sv-logo_58x58.png */; };
+		C2FD70851809CD7C00FA740A /* intro.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD70841809CD7C00FA740A /* intro.png */; };
+		C2FD708F1809D09C00FA740A /* gear_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD70861809D09C00FA740A /* gear_@2x.png */; };
+		C2FD70901809D09C00FA740A /* gear_35px.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD70871809D09C00FA740A /* gear_35px.png */; };
+		C2FD70911809D09C00FA740A /* home_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD70881809D09C00FA740A /* home_@2x.png */; };
+		C2FD70921809D09C00FA740A /* home_35px (1).png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD70891809D09C00FA740A /* home_35px (1).png */; };
+		C2FD70931809D09C00FA740A /* home_35px.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD708A1809D09C00FA740A /* home_35px.png */; };
+		C2FD70941809D09C00FA740A /* magnifying-glass_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD708B1809D09C00FA740A /* magnifying-glass_@2x.png */; };
+		C2FD70951809D09C00FA740A /* magnifying-glass_35px.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD708C1809D09C00FA740A /* magnifying-glass_35px.png */; };
+		C2FD70961809D09C00FA740A /* plus_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD708D1809D09C00FA740A /* plus_@2x.png */; };
+		C2FD70971809D09C00FA740A /* plus_35px.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD708E1809D09C00FA740A /* plus_35px.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +88,6 @@
 		C2DB18801809278B00A76511 /* Vote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vote.m; sourceTree = "<group>"; };
 		C2DB1885180955C400A76511 /* ProposalDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProposalDetailViewController.h; path = ../ProposalDetailViewController.h; sourceTree = "<group>"; };
 		C2DB1886180955C400A76511 /* ProposalDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProposalDetailViewController.m; path = ../ProposalDetailViewController.m; sourceTree = "<group>"; };
-		C2DB18881809830100A76511 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		C2DB188A1809891000A76511 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C2DB188C1809892600A76511 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C2DB188D1809892600A76511 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -82,6 +95,22 @@
 		C2DB189218098E6500A76511 /* SLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLViewController.h; sourceTree = "<group>"; };
 		C2DB189318098E6500A76511 /* SLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLViewController.m; sourceTree = "<group>"; };
 		C2DB18971809AF2800A76511 /* fbimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fbimage.png; sourceTree = "<group>"; };
+		C2FD70761809BB6D00FA740A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		C2FD70781809BBEF00FA740A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		C2FD707C1809C82000FA740A /* sv_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sv_icon@2x.png"; sourceTree = "<group>"; };
+		C2FD707D1809C82000FA740A /* sv-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sv-icon.png"; sourceTree = "<group>"; };
+		C2FD70801809CA1B00FA740A /* sv-logo_80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sv-logo_80x80.png"; sourceTree = "<group>"; };
+		C2FD70821809CA6300FA740A /* sv-logo_58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sv-logo_58x58.png"; sourceTree = "<group>"; };
+		C2FD70841809CD7C00FA740A /* intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro.png; sourceTree = "<group>"; };
+		C2FD70861809D09C00FA740A /* gear_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear_@2x.png"; sourceTree = "<group>"; };
+		C2FD70871809D09C00FA740A /* gear_35px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear_35px.png; sourceTree = "<group>"; };
+		C2FD70881809D09C00FA740A /* home_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_@2x.png"; sourceTree = "<group>"; };
+		C2FD70891809D09C00FA740A /* home_35px (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_35px (1).png"; sourceTree = "<group>"; };
+		C2FD708A1809D09C00FA740A /* home_35px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_35px.png; sourceTree = "<group>"; };
+		C2FD708B1809D09C00FA740A /* magnifying-glass_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifying-glass_@2x.png"; sourceTree = "<group>"; };
+		C2FD708C1809D09C00FA740A /* magnifying-glass_35px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifying-glass_35px.png"; sourceTree = "<group>"; };
+		C2FD708D1809D09C00FA740A /* plus_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus_@2x.png"; sourceTree = "<group>"; };
+		C2FD708E1809D09C00FA740A /* plus_35px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_35px.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +119,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2DB1845180908F700A76511 /* CoreGraphics.framework in Frameworks */,
-				C2DB18891809830100A76511 /* FacebookSDK.framework in Frameworks */,
 				C2DB1849180908F700A76511 /* CoreData.framework in Frameworks */,
 				C2DB1847180908F700A76511 /* UIKit.framework in Frameworks */,
 				C2DB1843180908F700A76511 /* Foundation.framework in Frameworks */,
+				C2FD70791809BBEF00FA740A /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +143,7 @@
 		C2DB1836180908F700A76511 = {
 			isa = PBXGroup;
 			children = (
+				C2FD70821809CA6300FA740A /* sv-logo_58x58.png */,
 				C2DB184A180908F700A76511 /* Spokenvote */,
 				C2DB1867180908F700A76511 /* SpokenvoteTests */,
 				C2DB1841180908F700A76511 /* Frameworks */,
@@ -133,6 +163,8 @@
 		C2DB1841180908F700A76511 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C2FD70781809BBEF00FA740A /* FacebookSDK.framework */,
+				C2FD70761809BB6D00FA740A /* FacebookSDK.framework */,
 				C2DB1842180908F700A76511 /* Foundation.framework */,
 				C2DB1844180908F700A76511 /* CoreGraphics.framework */,
 				C2DB1846180908F700A76511 /* UIKit.framework */,
@@ -145,21 +177,33 @@
 		C2DB184A180908F700A76511 /* Spokenvote */ = {
 			isa = PBXGroup;
 			children = (
+				C2FD70861809D09C00FA740A /* gear_@2x.png */,
+				C2FD70871809D09C00FA740A /* gear_35px.png */,
+				C2FD70881809D09C00FA740A /* home_@2x.png */,
+				C2FD70891809D09C00FA740A /* home_35px (1).png */,
+				C2FD708A1809D09C00FA740A /* home_35px.png */,
+				C2FD708B1809D09C00FA740A /* magnifying-glass_@2x.png */,
+				C2FD708C1809D09C00FA740A /* magnifying-glass_35px.png */,
+				C2FD708D1809D09C00FA740A /* plus_@2x.png */,
+				C2FD708E1809D09C00FA740A /* plus_35px.png */,
+				C2FD70841809CD7C00FA740A /* intro.png */,
+				C2FD70801809CA1B00FA740A /* sv-logo_80x80.png */,
 				C2DB1853180908F700A76511 /* AppDelegate.h */,
 				C2DB1854180908F700A76511 /* AppDelegate.m */,
 				C2DB187918090F1600A76511 /* TableViewController.h */,
 				C2DB187A18090F1600A76511 /* TableViewController.m */,
-				C2DB18881809830100A76511 /* FacebookSDK.framework */,
 				C2DB1885180955C400A76511 /* ProposalDetailViewController.h */,
 				C2DB1886180955C400A76511 /* ProposalDetailViewController.m */,
 				C2DB187C1809243300A76511 /* Proposal.h */,
 				C2DB187D1809243300A76511 /* Proposal.m */,
+				C2FD707C1809C82000FA740A /* sv_icon@2x.png */,
 				C2DB1859180908F700A76511 /* Images.xcassets */,
 				C2DB1856180908F700A76511 /* Spokenvote.xcdatamodeld */,
 				C2DB188A1809891000A76511 /* Default-568h@2x.png */,
 				C2DB188D1809892600A76511 /* Default@2x.png */,
 				C2DB188C1809892600A76511 /* Default.png */,
 				C2DB18971809AF2800A76511 /* fbimage.png */,
+				C2FD707D1809C82000FA740A /* sv-icon.png */,
 				C2DB188E1809892600A76511 /* images */,
 				C2DB184B180908F700A76511 /* Supporting Files */,
 				C2DB187718090A4B00A76511 /* MainStoryboard.storyboard */,
@@ -275,13 +319,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2FD70811809CA1B00FA740A /* sv-logo_80x80.png in Resources */,
+				C2FD70911809D09C00FA740A /* home_@2x.png in Resources */,
+				C2FD708F1809D09C00FA740A /* gear_@2x.png in Resources */,
+				C2FD70951809D09C00FA740A /* magnifying-glass_35px.png in Resources */,
+				C2FD70921809D09C00FA740A /* home_35px (1).png in Resources */,
+				C2FD70971809D09C00FA740A /* plus_35px.png in Resources */,
 				C2DB18901809892600A76511 /* Default@2x.png in Resources */,
 				C2DB18981809AF2800A76511 /* fbimage.png in Resources */,
+				C2FD70961809D09C00FA740A /* plus_@2x.png in Resources */,
+				C2FD707E1809C82000FA740A /* sv_icon@2x.png in Resources */,
+				C2FD70831809CA6300FA740A /* sv-logo_58x58.png in Resources */,
+				C2FD70931809D09C00FA740A /* home_35px.png in Resources */,
+				C2FD70941809D09C00FA740A /* magnifying-glass_@2x.png in Resources */,
+				C2FD707F1809C82000FA740A /* sv-icon.png in Resources */,
 				C2DB187818090A4B00A76511 /* MainStoryboard.storyboard in Resources */,
 				C2DB188B1809891000A76511 /* Default-568h@2x.png in Resources */,
 				C2DB184F180908F700A76511 /* InfoPlist.strings in Resources */,
 				C2DB185A180908F700A76511 /* Images.xcassets in Resources */,
+				C2FD70901809D09C00FA740A /* gear_35px.png in Resources */,
 				C2DB18911809892600A76511 /* images in Resources */,
+				C2FD70851809CD7C00FA740A /* intro.png in Resources */,
 				C2DB188F1809892600A76511 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,11 +483,12 @@
 		C2DB1872180908F700A76511 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/hainguyen/sideProjects/spokenvote-iphone/Spokenvote/Spokenvote",
+					/Users/hainguyen/Documents/FacebookSDK,
+					"/Users/hainguyen/sideProjects/spokenvote-iphone/Spokenvote",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spokenvote/Spokenvote-Prefix.pch";
@@ -443,11 +502,12 @@
 		C2DB1873180908F700A76511 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/hainguyen/sideProjects/spokenvote-iphone/Spokenvote/Spokenvote",
+					/Users/hainguyen/Documents/FacebookSDK,
+					"/Users/hainguyen/sideProjects/spokenvote-iphone/Spokenvote",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spokenvote/Spokenvote-Prefix.pch";

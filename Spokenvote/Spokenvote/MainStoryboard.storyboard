@@ -90,7 +90,7 @@
         <scene sceneID="EQC-Kh-TH1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pvz-AS-2Ke" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Browse" id="hCX-FV-uR5"/>
+                    <tabBarItem key="tabBarItem" title="Browse" image="home_35px.png" id="hCX-FV-uR5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nlp-tb-8z7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -109,11 +109,13 @@
         <scene sceneID="0bW-QX-HWo">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="oht-Pm-SIX" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="wyN-30-6lN">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="wyN-30-6lN">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="pvz-AS-2Ke" kind="relationship" relationship="viewControllers" id="RpI-Dd-YbF"/>
@@ -228,11 +230,11 @@
             </objects>
             <point key="canvasLocation" x="-89" y="447"/>
         </scene>
-        <!--Navigation Controller - Item1-->
+        <!--Navigation Controller - Browes-->
         <scene sceneID="civ-LD-cVk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lqK-zh-nPL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item1" id="sgU-sS-4PV"/>
+                    <tabBarItem key="tabBarItem" title="Browes" image="magnifying-glass_35px.png" id="sgU-sS-4PV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7gp-vD-k30">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -247,11 +249,11 @@
             </objects>
             <point key="canvasLocation" x="-532" y="-264"/>
         </scene>
-        <!--Navigation Controller - Item2-->
+        <!--Navigation Controller - New-->
         <scene sceneID="F6M-bi-Yd2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="73s-Xb-VAG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item2" id="LWd-py-nsn"/>
+                    <tabBarItem key="tabBarItem" title="New" image="plus_35px.png" id="LWd-py-nsn"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CJT-1f-bfd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -269,6 +271,9 @@
     </scenes>
     <resources>
         <image name="fbimage.png" width="416" height="101"/>
+        <image name="home_35px.png" width="35" height="35"/>
+        <image name="magnifying-glass_35px.png" width="35" height="35"/>
+        <image name="plus_35px.png" width="35" height="35"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
