@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C2DB17F41808B78A00A76511"
+               BlueprintIdentifier = "C2DB183E180908F700A76511"
                BuildableName = "Spokenvote.app"
                BlueprintName = "Spokenvote"
                ReferencedContainer = "container:Spokenvote.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C2DB181D1808B78B00A76511"
+               BlueprintIdentifier = "C2DB185E180908F700A76511"
                BuildableName = "SpokenvoteTests.xctest"
                BlueprintName = "SpokenvoteTests"
                ReferencedContainer = "container:Spokenvote.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C2DB17F41808B78A00A76511"
+            BlueprintIdentifier = "C2DB183E180908F700A76511"
             BuildableName = "Spokenvote.app"
             BlueprintName = "Spokenvote"
             ReferencedContainer = "container:Spokenvote.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C2DB17F41808B78A00A76511"
+            BlueprintIdentifier = "C2DB183E180908F700A76511"
             BuildableName = "Spokenvote.app"
             BlueprintName = "Spokenvote"
             ReferencedContainer = "container:Spokenvote.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C2DB17F41808B78A00A76511"
+            BlueprintIdentifier = "C2DB183E180908F700A76511"
             BuildableName = "Spokenvote.app"
             BlueprintName = "Spokenvote"
             ReferencedContainer = "container:Spokenvote.xcodeproj">
