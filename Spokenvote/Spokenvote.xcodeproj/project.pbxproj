@@ -48,6 +48,7 @@
 		C2FD70951809D09C00FA740A /* magnifying-glass_35px.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD708C1809D09C00FA740A /* magnifying-glass_35px.png */; };
 		C2FD70961809D09C00FA740A /* plus_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD708D1809D09C00FA740A /* plus_@2x.png */; };
 		C2FD70971809D09C00FA740A /* plus_35px.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD708E1809D09C00FA740A /* plus_35px.png */; };
+		C2FD709A1809D6AB00FA740A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FD70991809D6AB00FA740A /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		C2FD708C1809D09C00FA740A /* magnifying-glass_35px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifying-glass_35px.png"; sourceTree = "<group>"; };
 		C2FD708D1809D09C00FA740A /* plus_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus_@2x.png"; sourceTree = "<group>"; };
 		C2FD708E1809D09C00FA740A /* plus_35px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_35px.png; sourceTree = "<group>"; };
+		C2FD70981809D6AB00FA740A /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C2FD70991809D6AB00FA740A /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +210,8 @@
 				C2DB188E1809892600A76511 /* images */,
 				C2DB184B180908F700A76511 /* Supporting Files */,
 				C2DB187718090A4B00A76511 /* MainStoryboard.storyboard */,
+				C2FD70981809D6AB00FA740A /* DetailViewController.h */,
+				C2FD70991809D6AB00FA740A /* DetailViewController.m */,
 				C2DB187F1809278B00A76511 /* Vote.h */,
 				C2DB18801809278B00A76511 /* Vote.m */,
 				C2DB189218098E6500A76511 /* SLViewController.h */,
@@ -361,6 +366,7 @@
 			files = (
 				C2DB187E1809243300A76511 /* Proposal.m in Sources */,
 				C2DB1855180908F700A76511 /* AppDelegate.m in Sources */,
+				C2FD709A1809D6AB00FA740A /* DetailViewController.m in Sources */,
 				C2DB1858180908F700A76511 /* Spokenvote.xcdatamodeld in Sources */,
 				C2DB189418098E6500A76511 /* SLViewController.m in Sources */,
 				C2DB1851180908F700A76511 /* main.m in Sources */,

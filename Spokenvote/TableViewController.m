@@ -9,6 +9,7 @@
 #import "TableViewController.h"
 #import "Proposal.h"
 #import "ProposalDetailViewController.h"
+#import "DetailViewController.h"
 
 @interface TableViewController ()
 
@@ -44,12 +45,14 @@
         Proposal *proposal = [Proposal proposalWithId:[proposalDictionary objectForKey:@"id"]];
         proposal.statement = [proposalDictionary objectForKey:@"statement"];
         proposal.votes_percentage = [proposalDictionary objectForKey:@"votes_percentage"];
-        NSLog(@"%@", proposal.votes_percentage);
+       // NSLog(@"%@", proposal.votes_percentage);
         proposal.hub = [proposalDictionary objectForKey:@"hub"];
-        NSLog(@"%@", proposal.hub);
+       // NSLog(@"%@", proposal.hub);
         proposal.votes_count = [proposalDictionary objectForKey:@"votes_count"];
         proposal.votes = [proposalDictionary objectForKey:@"votes"];
         [self.proposals addObject:proposal];
+        
+        
         
         /*int proposal_id = [bpDictionary objectForKey:@"id"];
          NSString *id_string = [NSString stringWithFormat:@"%d", proposal_id];
@@ -59,7 +62,9 @@
          [proposal_url appendString:id_string];
          blogPost.url = [NSURL URLWithString:proposal_url];
          */
+        
     }
+
 
 
     // Uncomment the following line to preserve selection between presentations.
@@ -104,6 +109,7 @@
     cell.textLabel.text = proposal.statement;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", short_hub];
     
+    
     return cell;
 }
 
@@ -125,6 +131,7 @@
         pdvc.proposalURL = url_to_carry;
         
     }
+    
 }
 
 
