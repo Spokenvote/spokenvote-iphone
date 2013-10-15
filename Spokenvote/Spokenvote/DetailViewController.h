@@ -2,15 +2,14 @@
 //  DetailViewController.h
 //  Spokenvote
 //
-//  Created by Hai Nguyen on 10/11/13.
+//  Created by Hai Nguyen on 10/12/13.
 //  Copyright (c) 2013 Spokenvote. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UITableViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) NSURL *proposalURL;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end
