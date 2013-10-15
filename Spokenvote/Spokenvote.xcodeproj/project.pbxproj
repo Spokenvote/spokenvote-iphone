@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8316AB89180DFB05009499C3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8316AB88180DFB05009499C3 /* FacebookSDK.framework */; };
 		C2DB1843180908F700A76511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1842180908F700A76511 /* Foundation.framework */; };
 		C2DB1845180908F700A76511 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1844180908F700A76511 /* CoreGraphics.framework */; };
 		C2DB1847180908F700A76511 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1846180908F700A76511 /* UIKit.framework */; };
@@ -33,7 +34,6 @@
 		C2DB18911809892600A76511 /* images in Resources */ = {isa = PBXBuildFile; fileRef = C2DB188E1809892600A76511 /* images */; };
 		C2DB189418098E6500A76511 /* SLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB189318098E6500A76511 /* SLViewController.m */; };
 		C2DB18981809AF2800A76511 /* fbimage.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB18971809AF2800A76511 /* fbimage.png */; };
-		C2FD70791809BBEF00FA740A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FD70781809BBEF00FA740A /* FacebookSDK.framework */; };
 		C2FD707E1809C82000FA740A /* sv_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD707C1809C82000FA740A /* sv_icon@2x.png */; };
 		C2FD707F1809C82000FA740A /* sv-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD707D1809C82000FA740A /* sv-icon.png */; };
 		C2FD70811809CA1B00FA740A /* sv-logo_80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD70801809CA1B00FA740A /* sv-logo_80x80.png */; };
@@ -62,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8316AB88180DFB05009499C3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		C2DB183F180908F700A76511 /* Spokenvote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spokenvote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DB1842180908F700A76511 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C2DB1844180908F700A76511 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,11 +122,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8316AB89180DFB05009499C3 /* FacebookSDK.framework in Frameworks */,
 				C2DB1845180908F700A76511 /* CoreGraphics.framework in Frameworks */,
 				C2DB1849180908F700A76511 /* CoreData.framework in Frameworks */,
 				C2DB1847180908F700A76511 /* UIKit.framework in Frameworks */,
 				C2DB1843180908F700A76511 /* Foundation.framework in Frameworks */,
-				C2FD70791809BBEF00FA740A /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +167,7 @@
 		C2DB1841180908F700A76511 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8316AB88180DFB05009499C3 /* FacebookSDK.framework */,
 				C2FD70781809BBEF00FA740A /* FacebookSDK.framework */,
 				C2FD70761809BB6D00FA740A /* FacebookSDK.framework */,
 				C2DB1842180908F700A76511 /* Foundation.framework */,
@@ -495,6 +497,7 @@
 					"/Users/hainguyen/sideProjects/spokenvote-iphone/Spokenvote/Spokenvote",
 					/Users/hainguyen/Documents/FacebookSDK,
 					"/Users/hainguyen/sideProjects/spokenvote-iphone/Spokenvote",
+					/Users/kimardenmiller/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spokenvote/Spokenvote-Prefix.pch";
@@ -514,6 +517,7 @@
 					"/Users/hainguyen/sideProjects/spokenvote-iphone/Spokenvote/Spokenvote",
 					/Users/hainguyen/Documents/FacebookSDK,
 					"/Users/hainguyen/sideProjects/spokenvote-iphone/Spokenvote",
+					/Users/kimardenmiller/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spokenvote/Spokenvote-Prefix.pch";
