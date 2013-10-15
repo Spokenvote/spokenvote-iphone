@@ -7,161 +7,244 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2DB17F91808B78B00A76511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB17F81808B78B00A76511 /* Foundation.framework */; };
-		C2DB17FB1808B78B00A76511 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB17FA1808B78B00A76511 /* CoreGraphics.framework */; };
-		C2DB17FD1808B78B00A76511 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB17FC1808B78B00A76511 /* UIKit.framework */; };
-		C2DB17FF1808B78B00A76511 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB17FE1808B78B00A76511 /* CoreData.framework */; };
-		C2DB18051808B78B00A76511 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2DB18031808B78B00A76511 /* InfoPlist.strings */; };
-		C2DB18071808B78B00A76511 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB18061808B78B00A76511 /* main.m */; };
-		C2DB180B1808B78B00A76511 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB180A1808B78B00A76511 /* AppDelegate.m */; };
-		C2DB180E1808B78B00A76511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DB180C1808B78B00A76511 /* Main.storyboard */; };
-		C2DB18111808B78B00A76511 /* Spokenvote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2DB180F1808B78B00A76511 /* Spokenvote.xcdatamodeld */; };
-		C2DB18141808B78B00A76511 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB18131808B78B00A76511 /* MasterViewController.m */; };
-		C2DB18171808B78B00A76511 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB18161808B78B00A76511 /* DetailViewController.m */; };
-		C2DB18191808B78B00A76511 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DB18181808B78B00A76511 /* Images.xcassets */; };
-		C2DB18201808B78B00A76511 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB181F1808B78B00A76511 /* XCTest.framework */; };
-		C2DB18211808B78B00A76511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB17F81808B78B00A76511 /* Foundation.framework */; };
-		C2DB18221808B78B00A76511 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB17FC1808B78B00A76511 /* UIKit.framework */; };
-		C2DB18231808B78B00A76511 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB17FE1808B78B00A76511 /* CoreData.framework */; };
-		C2DB182B1808B78B00A76511 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2DB18291808B78B00A76511 /* InfoPlist.strings */; };
-		C2DB182D1808B78B00A76511 /* SpokenvoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB182C1808B78B00A76511 /* SpokenvoteTests.m */; };
+		C2DB1843180908F700A76511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1842180908F700A76511 /* Foundation.framework */; };
+		C2DB1845180908F700A76511 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1844180908F700A76511 /* CoreGraphics.framework */; };
+		C2DB1847180908F700A76511 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1846180908F700A76511 /* UIKit.framework */; };
+		C2DB1849180908F700A76511 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1848180908F700A76511 /* CoreData.framework */; };
+		C2DB184F180908F700A76511 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2DB184D180908F700A76511 /* InfoPlist.strings */; };
+		C2DB1851180908F700A76511 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB1850180908F700A76511 /* main.m */; };
+		C2DB1855180908F700A76511 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB1854180908F700A76511 /* AppDelegate.m */; };
+		C2DB1858180908F700A76511 /* Spokenvote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2DB1856180908F700A76511 /* Spokenvote.xcdatamodeld */; };
+		C2DB185A180908F700A76511 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DB1859180908F700A76511 /* Images.xcassets */; };
+		C2DB1861180908F700A76511 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1860180908F700A76511 /* XCTest.framework */; };
+		C2DB1862180908F700A76511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1842180908F700A76511 /* Foundation.framework */; };
+		C2DB1863180908F700A76511 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1846180908F700A76511 /* UIKit.framework */; };
+		C2DB1864180908F700A76511 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1848180908F700A76511 /* CoreData.framework */; };
+		C2DB186C180908F700A76511 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2DB186A180908F700A76511 /* InfoPlist.strings */; };
+		C2DB186E180908F700A76511 /* SpokenvoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB186D180908F700A76511 /* SpokenvoteTests.m */; };
+		C2DB187818090A4B00A76511 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DB187718090A4B00A76511 /* MainStoryboard.storyboard */; };
+		C2DB187B18090F1600A76511 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB187A18090F1600A76511 /* TableViewController.m */; };
+		C2DB187E1809243300A76511 /* Proposal.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB187D1809243300A76511 /* Proposal.m */; };
+		C2DB18811809278B00A76511 /* Vote.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB18801809278B00A76511 /* Vote.m */; };
+		C2DB1887180955C400A76511 /* ProposalDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB1886180955C400A76511 /* ProposalDetailViewController.m */; };
+		C2DB188B1809891000A76511 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB188A1809891000A76511 /* Default-568h@2x.png */; };
+		C2DB188F1809892600A76511 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB188C1809892600A76511 /* Default.png */; };
+		C2DB18901809892600A76511 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB188D1809892600A76511 /* Default@2x.png */; };
+		C2DB18911809892600A76511 /* images in Resources */ = {isa = PBXBuildFile; fileRef = C2DB188E1809892600A76511 /* images */; };
+		C2DB189418098E6500A76511 /* SLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB189318098E6500A76511 /* SLViewController.m */; };
+		C2DB18981809AF2800A76511 /* fbimage.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB18971809AF2800A76511 /* fbimage.png */; };
+		C2FD70791809BBEF00FA740A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FD70781809BBEF00FA740A /* FacebookSDK.framework */; };
+		C2FD707E1809C82000FA740A /* sv_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD707C1809C82000FA740A /* sv_icon@2x.png */; };
+		C2FD707F1809C82000FA740A /* sv-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD707D1809C82000FA740A /* sv-icon.png */; };
+		C2FD70811809CA1B00FA740A /* sv-logo_80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD70801809CA1B00FA740A /* sv-logo_80x80.png */; };
+		C2FD70831809CA6300FA740A /* sv-logo_58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD70821809CA6300FA740A /* sv-logo_58x58.png */; };
+		C2FD70851809CD7C00FA740A /* intro.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD70841809CD7C00FA740A /* intro.png */; };
+		C2FD708F1809D09C00FA740A /* gear_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD70861809D09C00FA740A /* gear_@2x.png */; };
+		C2FD70901809D09C00FA740A /* gear_35px.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD70871809D09C00FA740A /* gear_35px.png */; };
+		C2FD70911809D09C00FA740A /* home_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD70881809D09C00FA740A /* home_@2x.png */; };
+		C2FD70921809D09C00FA740A /* home_35px (1).png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD70891809D09C00FA740A /* home_35px (1).png */; };
+		C2FD70931809D09C00FA740A /* home_35px.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD708A1809D09C00FA740A /* home_35px.png */; };
+		C2FD70941809D09C00FA740A /* magnifying-glass_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD708B1809D09C00FA740A /* magnifying-glass_@2x.png */; };
+		C2FD70951809D09C00FA740A /* magnifying-glass_35px.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD708C1809D09C00FA740A /* magnifying-glass_35px.png */; };
+		C2FD70961809D09C00FA740A /* plus_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD708D1809D09C00FA740A /* plus_@2x.png */; };
+		C2FD70971809D09C00FA740A /* plus_35px.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD708E1809D09C00FA740A /* plus_35px.png */; };
+		C2FD709A1809D6AB00FA740A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FD70991809D6AB00FA740A /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C2DB18241808B78B00A76511 /* PBXContainerItemProxy */ = {
+		C2DB1865180908F700A76511 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C2DB17ED1808B78A00A76511 /* Project object */;
+			containerPortal = C2DB1837180908F700A76511 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C2DB17F41808B78A00A76511;
+			remoteGlobalIDString = C2DB183E180908F700A76511;
 			remoteInfo = Spokenvote;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C2DB17F51808B78B00A76511 /* Spokenvote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spokenvote.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2DB17F81808B78B00A76511 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C2DB17FA1808B78B00A76511 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C2DB17FC1808B78B00A76511 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C2DB17FE1808B78B00A76511 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		C2DB18021808B78B00A76511 /* Spokenvote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Spokenvote-Info.plist"; sourceTree = "<group>"; };
-		C2DB18041808B78B00A76511 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C2DB18061808B78B00A76511 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C2DB18081808B78B00A76511 /* Spokenvote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spokenvote-Prefix.pch"; sourceTree = "<group>"; };
-		C2DB18091808B78B00A76511 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C2DB180A1808B78B00A76511 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C2DB180D1808B78B00A76511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C2DB18101808B78B00A76511 /* Spokenvote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spokenvote.xcdatamodel; sourceTree = "<group>"; };
-		C2DB18121808B78B00A76511 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		C2DB18131808B78B00A76511 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		C2DB18151808B78B00A76511 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		C2DB18161808B78B00A76511 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		C2DB18181808B78B00A76511 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C2DB181E1808B78B00A76511 /* SpokenvoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpokenvoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2DB181F1808B78B00A76511 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C2DB18281808B78B00A76511 /* SpokenvoteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpokenvoteTests-Info.plist"; sourceTree = "<group>"; };
-		C2DB182A1808B78B00A76511 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C2DB182C1808B78B00A76511 /* SpokenvoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpokenvoteTests.m; sourceTree = "<group>"; };
+		C2DB183F180908F700A76511 /* Spokenvote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spokenvote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2DB1842180908F700A76511 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C2DB1844180908F700A76511 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C2DB1846180908F700A76511 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C2DB1848180908F700A76511 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C2DB184C180908F700A76511 /* Spokenvote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Spokenvote-Info.plist"; sourceTree = "<group>"; };
+		C2DB184E180908F700A76511 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C2DB1850180908F700A76511 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2DB1852180908F700A76511 /* Spokenvote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spokenvote-Prefix.pch"; sourceTree = "<group>"; };
+		C2DB1853180908F700A76511 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C2DB1854180908F700A76511 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C2DB1857180908F700A76511 /* Spokenvote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spokenvote.xcdatamodel; sourceTree = "<group>"; };
+		C2DB1859180908F700A76511 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C2DB185F180908F700A76511 /* SpokenvoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpokenvoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2DB1860180908F700A76511 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C2DB1869180908F700A76511 /* SpokenvoteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpokenvoteTests-Info.plist"; sourceTree = "<group>"; };
+		C2DB186B180908F700A76511 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C2DB186D180908F700A76511 /* SpokenvoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpokenvoteTests.m; sourceTree = "<group>"; };
+		C2DB187718090A4B00A76511 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C2DB187918090F1600A76511 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
+		C2DB187A18090F1600A76511 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
+		C2DB187C1809243300A76511 /* Proposal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Proposal.h; path = ../Proposal.h; sourceTree = "<group>"; };
+		C2DB187D1809243300A76511 /* Proposal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Proposal.m; path = ../Proposal.m; sourceTree = "<group>"; };
+		C2DB187F1809278B00A76511 /* Vote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vote.h; sourceTree = "<group>"; };
+		C2DB18801809278B00A76511 /* Vote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vote.m; sourceTree = "<group>"; };
+		C2DB1885180955C400A76511 /* ProposalDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProposalDetailViewController.h; path = ../ProposalDetailViewController.h; sourceTree = "<group>"; };
+		C2DB1886180955C400A76511 /* ProposalDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProposalDetailViewController.m; path = ../ProposalDetailViewController.m; sourceTree = "<group>"; };
+		C2DB188A1809891000A76511 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C2DB188C1809892600A76511 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C2DB188D1809892600A76511 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C2DB188E1809892600A76511 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		C2DB189218098E6500A76511 /* SLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLViewController.h; sourceTree = "<group>"; };
+		C2DB189318098E6500A76511 /* SLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLViewController.m; sourceTree = "<group>"; };
+		C2DB18971809AF2800A76511 /* fbimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fbimage.png; sourceTree = "<group>"; };
+		C2FD70761809BB6D00FA740A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		C2FD70781809BBEF00FA740A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		C2FD707C1809C82000FA740A /* sv_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sv_icon@2x.png"; sourceTree = "<group>"; };
+		C2FD707D1809C82000FA740A /* sv-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sv-icon.png"; sourceTree = "<group>"; };
+		C2FD70801809CA1B00FA740A /* sv-logo_80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sv-logo_80x80.png"; sourceTree = "<group>"; };
+		C2FD70821809CA6300FA740A /* sv-logo_58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sv-logo_58x58.png"; sourceTree = "<group>"; };
+		C2FD70841809CD7C00FA740A /* intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro.png; sourceTree = "<group>"; };
+		C2FD70861809D09C00FA740A /* gear_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear_@2x.png"; sourceTree = "<group>"; };
+		C2FD70871809D09C00FA740A /* gear_35px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear_35px.png; sourceTree = "<group>"; };
+		C2FD70881809D09C00FA740A /* home_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_@2x.png"; sourceTree = "<group>"; };
+		C2FD70891809D09C00FA740A /* home_35px (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_35px (1).png"; sourceTree = "<group>"; };
+		C2FD708A1809D09C00FA740A /* home_35px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_35px.png; sourceTree = "<group>"; };
+		C2FD708B1809D09C00FA740A /* magnifying-glass_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifying-glass_@2x.png"; sourceTree = "<group>"; };
+		C2FD708C1809D09C00FA740A /* magnifying-glass_35px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifying-glass_35px.png"; sourceTree = "<group>"; };
+		C2FD708D1809D09C00FA740A /* plus_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus_@2x.png"; sourceTree = "<group>"; };
+		C2FD708E1809D09C00FA740A /* plus_35px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_35px.png; sourceTree = "<group>"; };
+		C2FD70981809D6AB00FA740A /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C2FD70991809D6AB00FA740A /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C2DB17F21808B78A00A76511 /* Frameworks */ = {
+		C2DB183C180908F700A76511 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DB17FB1808B78B00A76511 /* CoreGraphics.framework in Frameworks */,
-				C2DB17FF1808B78B00A76511 /* CoreData.framework in Frameworks */,
-				C2DB17FD1808B78B00A76511 /* UIKit.framework in Frameworks */,
-				C2DB17F91808B78B00A76511 /* Foundation.framework in Frameworks */,
+				C2DB1845180908F700A76511 /* CoreGraphics.framework in Frameworks */,
+				C2DB1849180908F700A76511 /* CoreData.framework in Frameworks */,
+				C2DB1847180908F700A76511 /* UIKit.framework in Frameworks */,
+				C2DB1843180908F700A76511 /* Foundation.framework in Frameworks */,
+				C2FD70791809BBEF00FA740A /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2DB181B1808B78B00A76511 /* Frameworks */ = {
+		C2DB185C180908F700A76511 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DB18201808B78B00A76511 /* XCTest.framework in Frameworks */,
-				C2DB18231808B78B00A76511 /* CoreData.framework in Frameworks */,
-				C2DB18221808B78B00A76511 /* UIKit.framework in Frameworks */,
-				C2DB18211808B78B00A76511 /* Foundation.framework in Frameworks */,
+				C2DB1861180908F700A76511 /* XCTest.framework in Frameworks */,
+				C2DB1864180908F700A76511 /* CoreData.framework in Frameworks */,
+				C2DB1863180908F700A76511 /* UIKit.framework in Frameworks */,
+				C2DB1862180908F700A76511 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C2DB17EC1808B78A00A76511 = {
+		C2DB1836180908F700A76511 = {
 			isa = PBXGroup;
 			children = (
-				C2DB18001808B78B00A76511 /* Spokenvote */,
-				C2DB18261808B78B00A76511 /* SpokenvoteTests */,
-				C2DB17F71808B78B00A76511 /* Frameworks */,
-				C2DB17F61808B78B00A76511 /* Products */,
+				C2FD70821809CA6300FA740A /* sv-logo_58x58.png */,
+				C2DB184A180908F700A76511 /* Spokenvote */,
+				C2DB1867180908F700A76511 /* SpokenvoteTests */,
+				C2DB1841180908F700A76511 /* Frameworks */,
+				C2DB1840180908F700A76511 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C2DB17F61808B78B00A76511 /* Products */ = {
+		C2DB1840180908F700A76511 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2DB17F51808B78B00A76511 /* Spokenvote.app */,
-				C2DB181E1808B78B00A76511 /* SpokenvoteTests.xctest */,
+				C2DB183F180908F700A76511 /* Spokenvote.app */,
+				C2DB185F180908F700A76511 /* SpokenvoteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C2DB17F71808B78B00A76511 /* Frameworks */ = {
+		C2DB1841180908F700A76511 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C2DB17F81808B78B00A76511 /* Foundation.framework */,
-				C2DB17FA1808B78B00A76511 /* CoreGraphics.framework */,
-				C2DB17FC1808B78B00A76511 /* UIKit.framework */,
-				C2DB17FE1808B78B00A76511 /* CoreData.framework */,
-				C2DB181F1808B78B00A76511 /* XCTest.framework */,
+				C2FD70781809BBEF00FA740A /* FacebookSDK.framework */,
+				C2FD70761809BB6D00FA740A /* FacebookSDK.framework */,
+				C2DB1842180908F700A76511 /* Foundation.framework */,
+				C2DB1844180908F700A76511 /* CoreGraphics.framework */,
+				C2DB1846180908F700A76511 /* UIKit.framework */,
+				C2DB1848180908F700A76511 /* CoreData.framework */,
+				C2DB1860180908F700A76511 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C2DB18001808B78B00A76511 /* Spokenvote */ = {
+		C2DB184A180908F700A76511 /* Spokenvote */ = {
 			isa = PBXGroup;
 			children = (
-				C2DB18091808B78B00A76511 /* AppDelegate.h */,
-				C2DB180A1808B78B00A76511 /* AppDelegate.m */,
-				C2DB180C1808B78B00A76511 /* Main.storyboard */,
-				C2DB18121808B78B00A76511 /* MasterViewController.h */,
-				C2DB18131808B78B00A76511 /* MasterViewController.m */,
-				C2DB18151808B78B00A76511 /* DetailViewController.h */,
-				C2DB18161808B78B00A76511 /* DetailViewController.m */,
-				C2DB18181808B78B00A76511 /* Images.xcassets */,
-				C2DB180F1808B78B00A76511 /* Spokenvote.xcdatamodeld */,
-				C2DB18011808B78B00A76511 /* Supporting Files */,
+				C2FD70861809D09C00FA740A /* gear_@2x.png */,
+				C2FD70871809D09C00FA740A /* gear_35px.png */,
+				C2FD70881809D09C00FA740A /* home_@2x.png */,
+				C2FD70891809D09C00FA740A /* home_35px (1).png */,
+				C2FD708A1809D09C00FA740A /* home_35px.png */,
+				C2FD708B1809D09C00FA740A /* magnifying-glass_@2x.png */,
+				C2FD708C1809D09C00FA740A /* magnifying-glass_35px.png */,
+				C2FD708D1809D09C00FA740A /* plus_@2x.png */,
+				C2FD708E1809D09C00FA740A /* plus_35px.png */,
+				C2FD70841809CD7C00FA740A /* intro.png */,
+				C2FD70801809CA1B00FA740A /* sv-logo_80x80.png */,
+				C2DB1853180908F700A76511 /* AppDelegate.h */,
+				C2DB1854180908F700A76511 /* AppDelegate.m */,
+				C2DB187918090F1600A76511 /* TableViewController.h */,
+				C2DB187A18090F1600A76511 /* TableViewController.m */,
+				C2DB1885180955C400A76511 /* ProposalDetailViewController.h */,
+				C2DB1886180955C400A76511 /* ProposalDetailViewController.m */,
+				C2DB187C1809243300A76511 /* Proposal.h */,
+				C2DB187D1809243300A76511 /* Proposal.m */,
+				C2FD707C1809C82000FA740A /* sv_icon@2x.png */,
+				C2DB1859180908F700A76511 /* Images.xcassets */,
+				C2DB1856180908F700A76511 /* Spokenvote.xcdatamodeld */,
+				C2DB188A1809891000A76511 /* Default-568h@2x.png */,
+				C2DB188D1809892600A76511 /* Default@2x.png */,
+				C2DB188C1809892600A76511 /* Default.png */,
+				C2DB18971809AF2800A76511 /* fbimage.png */,
+				C2FD707D1809C82000FA740A /* sv-icon.png */,
+				C2DB188E1809892600A76511 /* images */,
+				C2DB184B180908F700A76511 /* Supporting Files */,
+				C2DB187718090A4B00A76511 /* MainStoryboard.storyboard */,
+				C2FD70981809D6AB00FA740A /* DetailViewController.h */,
+				C2FD70991809D6AB00FA740A /* DetailViewController.m */,
+				C2DB187F1809278B00A76511 /* Vote.h */,
+				C2DB18801809278B00A76511 /* Vote.m */,
+				C2DB189218098E6500A76511 /* SLViewController.h */,
+				C2DB189318098E6500A76511 /* SLViewController.m */,
 			);
 			path = Spokenvote;
 			sourceTree = "<group>";
 		};
-		C2DB18011808B78B00A76511 /* Supporting Files */ = {
+		C2DB184B180908F700A76511 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C2DB18021808B78B00A76511 /* Spokenvote-Info.plist */,
-				C2DB18031808B78B00A76511 /* InfoPlist.strings */,
-				C2DB18061808B78B00A76511 /* main.m */,
-				C2DB18081808B78B00A76511 /* Spokenvote-Prefix.pch */,
+				C2DB184C180908F700A76511 /* Spokenvote-Info.plist */,
+				C2DB184D180908F700A76511 /* InfoPlist.strings */,
+				C2DB1850180908F700A76511 /* main.m */,
+				C2DB1852180908F700A76511 /* Spokenvote-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C2DB18261808B78B00A76511 /* SpokenvoteTests */ = {
+		C2DB1867180908F700A76511 /* SpokenvoteTests */ = {
 			isa = PBXGroup;
 			children = (
-				C2DB182C1808B78B00A76511 /* SpokenvoteTests.m */,
-				C2DB18271808B78B00A76511 /* Supporting Files */,
+				C2DB186D180908F700A76511 /* SpokenvoteTests.m */,
+				C2DB1868180908F700A76511 /* Supporting Files */,
 			);
 			path = SpokenvoteTests;
 			sourceTree = "<group>";
 		};
-		C2DB18271808B78B00A76511 /* Supporting Files */ = {
+		C2DB1868180908F700A76511 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C2DB18281808B78B00A76511 /* SpokenvoteTests-Info.plist */,
-				C2DB18291808B78B00A76511 /* InfoPlist.strings */,
+				C2DB1869180908F700A76511 /* SpokenvoteTests-Info.plist */,
+				C2DB186A180908F700A76511 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -169,13 +252,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C2DB17F41808B78A00A76511 /* Spokenvote */ = {
+		C2DB183E180908F700A76511 /* Spokenvote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2DB18301808B78B00A76511 /* Build configuration list for PBXNativeTarget "Spokenvote" */;
+			buildConfigurationList = C2DB1871180908F700A76511 /* Build configuration list for PBXNativeTarget "Spokenvote" */;
 			buildPhases = (
-				C2DB17F11808B78A00A76511 /* Sources */,
-				C2DB17F21808B78A00A76511 /* Frameworks */,
-				C2DB17F31808B78A00A76511 /* Resources */,
+				C2DB183B180908F700A76511 /* Sources */,
+				C2DB183C180908F700A76511 /* Frameworks */,
+				C2DB183D180908F700A76511 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -183,133 +266,147 @@
 			);
 			name = Spokenvote;
 			productName = Spokenvote;
-			productReference = C2DB17F51808B78B00A76511 /* Spokenvote.app */;
+			productReference = C2DB183F180908F700A76511 /* Spokenvote.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C2DB181D1808B78B00A76511 /* SpokenvoteTests */ = {
+		C2DB185E180908F700A76511 /* SpokenvoteTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2DB18331808B78B00A76511 /* Build configuration list for PBXNativeTarget "SpokenvoteTests" */;
+			buildConfigurationList = C2DB1874180908F700A76511 /* Build configuration list for PBXNativeTarget "SpokenvoteTests" */;
 			buildPhases = (
-				C2DB181A1808B78B00A76511 /* Sources */,
-				C2DB181B1808B78B00A76511 /* Frameworks */,
-				C2DB181C1808B78B00A76511 /* Resources */,
+				C2DB185B180908F700A76511 /* Sources */,
+				C2DB185C180908F700A76511 /* Frameworks */,
+				C2DB185D180908F700A76511 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C2DB18251808B78B00A76511 /* PBXTargetDependency */,
+				C2DB1866180908F700A76511 /* PBXTargetDependency */,
 			);
 			name = SpokenvoteTests;
 			productName = SpokenvoteTests;
-			productReference = C2DB181E1808B78B00A76511 /* SpokenvoteTests.xctest */;
+			productReference = C2DB185F180908F700A76511 /* SpokenvoteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C2DB17ED1808B78A00A76511 /* Project object */ = {
+		C2DB1837180908F700A76511 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Spokenvote;
 				TargetAttributes = {
-					C2DB181D1808B78B00A76511 = {
-						TestTargetID = C2DB17F41808B78A00A76511;
+					C2DB185E180908F700A76511 = {
+						TestTargetID = C2DB183E180908F700A76511;
 					};
 				};
 			};
-			buildConfigurationList = C2DB17F01808B78A00A76511 /* Build configuration list for PBXProject "Spokenvote" */;
+			buildConfigurationList = C2DB183A180908F700A76511 /* Build configuration list for PBXProject "Spokenvote" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = C2DB17EC1808B78A00A76511;
-			productRefGroup = C2DB17F61808B78B00A76511 /* Products */;
+			mainGroup = C2DB1836180908F700A76511;
+			productRefGroup = C2DB1840180908F700A76511 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C2DB17F41808B78A00A76511 /* Spokenvote */,
-				C2DB181D1808B78B00A76511 /* SpokenvoteTests */,
+				C2DB183E180908F700A76511 /* Spokenvote */,
+				C2DB185E180908F700A76511 /* SpokenvoteTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C2DB17F31808B78A00A76511 /* Resources */ = {
+		C2DB183D180908F700A76511 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DB18191808B78B00A76511 /* Images.xcassets in Resources */,
-				C2DB18051808B78B00A76511 /* InfoPlist.strings in Resources */,
-				C2DB180E1808B78B00A76511 /* Main.storyboard in Resources */,
+				C2FD70811809CA1B00FA740A /* sv-logo_80x80.png in Resources */,
+				C2FD70911809D09C00FA740A /* home_@2x.png in Resources */,
+				C2FD708F1809D09C00FA740A /* gear_@2x.png in Resources */,
+				C2FD70951809D09C00FA740A /* magnifying-glass_35px.png in Resources */,
+				C2FD70921809D09C00FA740A /* home_35px (1).png in Resources */,
+				C2FD70971809D09C00FA740A /* plus_35px.png in Resources */,
+				C2DB18901809892600A76511 /* Default@2x.png in Resources */,
+				C2DB18981809AF2800A76511 /* fbimage.png in Resources */,
+				C2FD70961809D09C00FA740A /* plus_@2x.png in Resources */,
+				C2FD707E1809C82000FA740A /* sv_icon@2x.png in Resources */,
+				C2FD70831809CA6300FA740A /* sv-logo_58x58.png in Resources */,
+				C2FD70931809D09C00FA740A /* home_35px.png in Resources */,
+				C2FD70941809D09C00FA740A /* magnifying-glass_@2x.png in Resources */,
+				C2FD707F1809C82000FA740A /* sv-icon.png in Resources */,
+				C2DB187818090A4B00A76511 /* MainStoryboard.storyboard in Resources */,
+				C2DB188B1809891000A76511 /* Default-568h@2x.png in Resources */,
+				C2DB184F180908F700A76511 /* InfoPlist.strings in Resources */,
+				C2DB185A180908F700A76511 /* Images.xcassets in Resources */,
+				C2FD70901809D09C00FA740A /* gear_35px.png in Resources */,
+				C2DB18911809892600A76511 /* images in Resources */,
+				C2FD70851809CD7C00FA740A /* intro.png in Resources */,
+				C2DB188F1809892600A76511 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2DB181C1808B78B00A76511 /* Resources */ = {
+		C2DB185D180908F700A76511 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DB182B1808B78B00A76511 /* InfoPlist.strings in Resources */,
+				C2DB186C180908F700A76511 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C2DB17F11808B78A00A76511 /* Sources */ = {
+		C2DB183B180908F700A76511 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DB18171808B78B00A76511 /* DetailViewController.m in Sources */,
-				C2DB18141808B78B00A76511 /* MasterViewController.m in Sources */,
-				C2DB180B1808B78B00A76511 /* AppDelegate.m in Sources */,
-				C2DB18111808B78B00A76511 /* Spokenvote.xcdatamodeld in Sources */,
-				C2DB18071808B78B00A76511 /* main.m in Sources */,
+				C2DB187E1809243300A76511 /* Proposal.m in Sources */,
+				C2DB1855180908F700A76511 /* AppDelegate.m in Sources */,
+				C2FD709A1809D6AB00FA740A /* DetailViewController.m in Sources */,
+				C2DB1858180908F700A76511 /* Spokenvote.xcdatamodeld in Sources */,
+				C2DB189418098E6500A76511 /* SLViewController.m in Sources */,
+				C2DB1851180908F700A76511 /* main.m in Sources */,
+				C2DB187B18090F1600A76511 /* TableViewController.m in Sources */,
+				C2DB1887180955C400A76511 /* ProposalDetailViewController.m in Sources */,
+				C2DB18811809278B00A76511 /* Vote.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2DB181A1808B78B00A76511 /* Sources */ = {
+		C2DB185B180908F700A76511 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DB182D1808B78B00A76511 /* SpokenvoteTests.m in Sources */,
+				C2DB186E180908F700A76511 /* SpokenvoteTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C2DB18251808B78B00A76511 /* PBXTargetDependency */ = {
+		C2DB1866180908F700A76511 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C2DB17F41808B78A00A76511 /* Spokenvote */;
-			targetProxy = C2DB18241808B78B00A76511 /* PBXContainerItemProxy */;
+			target = C2DB183E180908F700A76511 /* Spokenvote */;
+			targetProxy = C2DB1865180908F700A76511 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C2DB18031808B78B00A76511 /* InfoPlist.strings */ = {
+		C2DB184D180908F700A76511 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C2DB18041808B78B00A76511 /* en */,
+				C2DB184E180908F700A76511 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		C2DB180C1808B78B00A76511 /* Main.storyboard */ = {
+		C2DB186A180908F700A76511 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C2DB180D1808B78B00A76511 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C2DB18291808B78B00A76511 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C2DB182A1808B78B00A76511 /* en */,
+				C2DB186B180908F700A76511 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -317,7 +414,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C2DB182E1808B78B00A76511 /* Debug */ = {
+		C2DB186F180908F700A76511 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -350,13 +447,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		C2DB182F1808B78B00A76511 /* Release */ = {
+		C2DB1870180908F700A76511 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -383,39 +480,51 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		C2DB18311808B78B00A76511 /* Debug */ = {
+		C2DB1872180908F700A76511 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/hainguyen/sideProjects/spokenvote-iphone/Spokenvote/Spokenvote",
+					/Users/hainguyen/Documents/FacebookSDK,
+					"/Users/hainguyen/sideProjects/spokenvote-iphone/Spokenvote",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spokenvote/Spokenvote-Prefix.pch";
 				INFOPLIST_FILE = "Spokenvote/Spokenvote-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		C2DB18321808B78B00A76511 /* Release */ = {
+		C2DB1873180908F700A76511 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/hainguyen/sideProjects/spokenvote-iphone/Spokenvote/Spokenvote",
+					/Users/hainguyen/Documents/FacebookSDK,
+					"/Users/hainguyen/sideProjects/spokenvote-iphone/Spokenvote",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spokenvote/Spokenvote-Prefix.pch";
 				INFOPLIST_FILE = "Spokenvote/Spokenvote-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		C2DB18341808B78B00A76511 /* Debug */ = {
+		C2DB1875180908F700A76511 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -438,7 +547,7 @@
 			};
 			name = Debug;
 		};
-		C2DB18351808B78B00A76511 /* Release */ = {
+		C2DB1876180908F700A76511 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -460,45 +569,47 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C2DB17F01808B78A00A76511 /* Build configuration list for PBXProject "Spokenvote" */ = {
+		C2DB183A180908F700A76511 /* Build configuration list for PBXProject "Spokenvote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C2DB182E1808B78B00A76511 /* Debug */,
-				C2DB182F1808B78B00A76511 /* Release */,
+				C2DB186F180908F700A76511 /* Debug */,
+				C2DB1870180908F700A76511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2DB18301808B78B00A76511 /* Build configuration list for PBXNativeTarget "Spokenvote" */ = {
+		C2DB1871180908F700A76511 /* Build configuration list for PBXNativeTarget "Spokenvote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C2DB18311808B78B00A76511 /* Debug */,
-				C2DB18321808B78B00A76511 /* Release */,
+				C2DB1872180908F700A76511 /* Debug */,
+				C2DB1873180908F700A76511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		C2DB18331808B78B00A76511 /* Build configuration list for PBXNativeTarget "SpokenvoteTests" */ = {
+		C2DB1874180908F700A76511 /* Build configuration list for PBXNativeTarget "SpokenvoteTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C2DB18341808B78B00A76511 /* Debug */,
-				C2DB18351808B78B00A76511 /* Release */,
+				C2DB1875180908F700A76511 /* Debug */,
+				C2DB1876180908F700A76511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C2DB180F1808B78B00A76511 /* Spokenvote.xcdatamodeld */ = {
+		C2DB1856180908F700A76511 /* Spokenvote.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C2DB18101808B78B00A76511 /* Spokenvote.xcdatamodel */,
+				C2DB1857180908F700A76511 /* Spokenvote.xcdatamodel */,
 			);
-			currentVersion = C2DB18101808B78B00A76511 /* Spokenvote.xcdatamodel */;
+			currentVersion = C2DB1857180908F700A76511 /* Spokenvote.xcdatamodel */;
 			path = Spokenvote.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = C2DB17ED1808B78A00A76511 /* Project object */;
+	rootObject = C2DB1837180908F700A76511 /* Project object */;
 }
