@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>66C38465-5DF4-4D93-85B8-5EAA96B92FF0</string>
+	<string>2EFEDB1C-4182-4E97-ABE7-7BCD4FCFB9B3</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Spokenvote</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>20FA6D1A-BD7C-4A56-8AB7-F78E0B8585B9</key>
-		<string>ssh://github.com/nhuhai/spokenvote-iphone.git</string>
+		<key>28253C07-E88E-4E4E-8C98-CA565A08368A</key>
+		<string>https://github.com/Spokenvote/spokenvote-iphone.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Spokenvote/Spokenvote.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>20FA6D1A-BD7C-4A56-8AB7-F78E0B8585B9</key>
+		<key>28253C07-E88E-4E4E-8C98-CA565A08368A</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/nhuhai/spokenvote-iphone.git</string>
+	<string>https://github.com/Spokenvote/spokenvote-iphone.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>20FA6D1A-BD7C-4A56-8AB7-F78E0B8585B9</string>
+	<string>28253C07-E88E-4E4E-8C98-CA565A08368A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>20FA6D1A-BD7C-4A56-8AB7-F78E0B8585B9</string>
+			<string>28253C07-E88E-4E4E-8C98-CA565A08368A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>spokenvote-iphone</string>
 		</dict>

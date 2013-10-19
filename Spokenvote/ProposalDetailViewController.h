@@ -11,6 +11,9 @@
 @interface ProposalDetailViewController : UIViewController
 
 @property (strong, nonatomic) NSURL *proposalURL;
+@property (strong, nonatomic) IBOutlet UILabel *proposalStatementLabel;
+@property (strong, nonatomic) IBOutlet UILabel *groupName;
+@property (strong, nonatomic) IBOutlet UILabel *formatedLocation;
 
 //@property (strong, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic) IBOutlet UIWebView *webView;

@@ -30,9 +30,9 @@
 {
     [super viewDidLoad];
     
-    NSURL *blogURL = [NSURL URLWithString:@"http://www.spokenvote.org/proposals.json"];
+    NSURL *proposalListURL = [NSURL URLWithString:@"http://www.spokenvote.org/proposals.json"];
     
-    NSData *jsonData = [NSData dataWithContentsOfURL:blogURL];
+    NSData *jsonData = [NSData dataWithContentsOfURL:proposalListURL];
     
     NSError *error = nil;
     
@@ -114,7 +114,6 @@
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"preparing for segue: %@",segue.identifier);
     
     if ( [segue.identifier isEqualToString:@"showProposalDetail"]){
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
@@ -125,6 +124,7 @@
         NSMutableString *url = [NSMutableString stringWithString:@"http://www.spokenvote.org/proposals/"];
         
         [url appendString:id_string];
+        [url appendString:@".json"];
         
         ProposalDetailViewController *pdvc = (ProposalDetailViewController *)segue.destinationViewController;
         NSURL *url_to_carry = [NSURL URLWithString:url];
