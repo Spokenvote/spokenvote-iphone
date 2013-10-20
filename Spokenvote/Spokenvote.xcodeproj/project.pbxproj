@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8316AB89180DFB05009499C3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8316AB88180DFB05009499C3 /* FacebookSDK.framework */; };
+		83CB779D181358AA009D1447 /* action-people.png in Resources */ = {isa = PBXBuildFile; fileRef = 83CB779C181358AA009D1447 /* action-people.png */; };
 		C2DB1843180908F700A76511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1842180908F700A76511 /* Foundation.framework */; };
 		C2DB1845180908F700A76511 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1844180908F700A76511 /* CoreGraphics.framework */; };
 		C2DB1847180908F700A76511 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1846180908F700A76511 /* UIKit.framework */; };
@@ -63,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		8316AB88180DFB05009499C3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		83CB779C181358AA009D1447 /* action-people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "action-people.png"; path = "images/action-people.png"; sourceTree = "<group>"; };
 		C2DB183F180908F700A76511 /* Spokenvote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spokenvote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DB1842180908F700A76511 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C2DB1844180908F700A76511 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -207,6 +209,7 @@
 				C2DB188A1809891000A76511 /* Default-568h@2x.png */,
 				C2DB188D1809892600A76511 /* Default@2x.png */,
 				C2DB188C1809892600A76511 /* Default.png */,
+				83CB779C181358AA009D1447 /* action-people.png */,
 				C2DB18971809AF2800A76511 /* fbimage.png */,
 				C2FD707D1809C82000FA740A /* sv-icon.png */,
 				C2DB188E1809892600A76511 /* images */,
@@ -348,6 +351,7 @@
 				C2DB18911809892600A76511 /* images in Resources */,
 				C2FD70851809CD7C00FA740A /* intro.png in Resources */,
 				C2DB188F1809892600A76511 /* Default.png in Resources */,
+				83CB779D181358AA009D1447 /* action-people.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

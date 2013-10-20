@@ -10,4 +10,17 @@
 
 @implementation Vote
 
+- (id) initWithId: (NSNumber *) id {
+    self = [super init];
+    if ( self ) {
+        self.vote_id = id;
+    }
+    
+    return self;
+}
+
++ (id) voteWithId: (NSNumber *) id {
+    return [[self alloc] initWithId:id];
+}
+
 @end

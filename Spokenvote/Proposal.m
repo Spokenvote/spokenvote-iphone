@@ -12,8 +12,7 @@
 
 - (id) initWithId: (NSNumber *) id {
     self = [super init];
-    
-    if ( self ){
+    if ( self ) {
         self.proposal_id = id;
     }
     
