@@ -40,8 +40,6 @@
     
     NSDictionary *proposalDetail = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
     
-//    NSLog(@"%@",proposalDetail);
-    
     Proposal *proposal = [Proposal proposalWithId:[proposalDetail objectForKey:@"id"]];
     proposal.statement = [proposalDetail objectForKey:@"statement"];
     proposal.hub = [proposalDetail objectForKey:@"hub"];
@@ -71,12 +69,6 @@
         
         [self.votesArray addObject:vote];
     }
-
-    
-    
-    NSLog(@"%@",proposal.statement);
-//	[self.webView loadRequest:urlRequest];
-	// Do any additional setup after loading the view.
 }
 
 

@@ -57,7 +57,7 @@
         
     }
 
-
+    [self.tableView reloadData];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -128,12 +128,28 @@
     return cell;
 }
 
+
+/*#pragma mark - TableView Delegate
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Perform segue to candy detail
+    [self performSegueWithIdentifier:@"showProposalDetail" sender:tableView];
+} */
+
+#pragma mark - Segue
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+    //tableView == self.searchDisplayController.searchResultsTableView
     
     if ( [segue.identifier isEqualToString:@"showProposalDetail"]){
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        Proposal *proposal = [self.proposals objectAtIndex:indexPath.row];
-        
+        NSIndexPath *indexPath;
+        Proposal *proposal;
+        if([self.searchDisplayController isActive]) {
+            indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+            proposal = [self.filteredProposalsArray objectAtIndex:indexPath.row];
+        } else {
+            indexPath = [self.tableView indexPathForSelectedRow];
+            proposal = [self.proposals objectAtIndex:indexPath.row];
+        }
         NSNumber *proposal_id = proposal.proposal_id;
         NSString *id_string = [NSString stringWithFormat:@"%@", proposal_id, nil];
         NSMutableString *url = [NSMutableString stringWithString:@"http://www.spokenvote.org/proposals/"];
@@ -144,10 +160,10 @@
         ProposalDetailViewController *pdvc = (ProposalDetailViewController *)segue.destinationViewController;
         NSURL *url_to_carry = [NSURL URLWithString:url];
         pdvc.proposalURL = url_to_carry;
-        
     }
     
 }
+
 
 #pragma mark Content Filtering
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
