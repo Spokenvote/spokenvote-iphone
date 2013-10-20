@@ -20,5 +20,8 @@
 - (id) initWithId: (NSNumber *) id;
 + (id) voteWithId:(NSNumber*) id;
 
+- (NSURL *) thumbnailURL;
+- (NSString *) formattedDate;
+
 @end
 

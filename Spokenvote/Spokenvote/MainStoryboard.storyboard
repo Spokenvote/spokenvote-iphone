@@ -128,25 +128,32 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="NHT-Ur-Qsq" detailTextLabel="hgS-io-K07" imageView="Zhs-0y-RiG" style="IBUITableViewCellStyleSubtitle" id="4q9-mb-sJA">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="NHT-Ur-Qsq" detailTextLabel="hgS-io-K07" imageView="Zhs-0y-RiG" style="IBUITableViewCellStyleSubtitle" id="4q9-mb-sJA">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4q9-mb-sJA" id="D7y-qF-hHs">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Comment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NHT-Ur-Qsq">
-                                                    <rect key="frame" x="73" y="6" width="64" height="17"/>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Voter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NHT-Ur-Qsq">
+                                                    <rect key="frame" x="73" y="6" width="32" height="16"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Voter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hgS-io-K07">
-                                                    <rect key="frame" x="73" y="23" width="29" height="15"/>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Comment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hgS-io-K07">
+                                                    <rect key="frame" x="73" y="22" width="55" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="topRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="createdAt" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K9o-W9-mlo">
+                                                    <rect key="frame" x="206" y="3" width="91" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="action-people.png" id="Zhs-0y-RiG">
@@ -155,6 +162,9 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="4BF-L0-mou" kind="push" identifier="showVote" id="Vif-Yi-pAn"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -176,7 +186,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s36-fw-hxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744" y="-979"/>
+            <point key="canvasLocation" x="745" y="-964"/>
+        </scene>
+        <!--Vote View Controller - Supporting Argument-->
+        <scene sceneID="ebl-OH-kyZ">
+            <objects>
+                <viewController id="4BF-L0-mou" customClass="VoteViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EdM-Dq-vkb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="c4G-PE-qF6">
+                                <rect key="frame" x="20" y="86" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supporting Comment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Avx-14-akm">
+                                <rect key="frame" x="20" y="169" width="281" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DR0-bc-Z0C">
+                                <rect key="frame" x="84" y="86" width="216" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pJO-0z-0rl">
+                                <rect key="frame" x="84" y="115" width="211" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Supporting Argument" id="MDP-xM-Y8H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oQf-tl-pGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1162" y="-964"/>
         </scene>
         <!--Navigation Controller - Browse-->
         <scene sceneID="EQC-Kh-TH1">

@@ -101,11 +101,36 @@
     
     Vote *vote = [self.votesArray objectAtIndex:indexPath.row];
     
+    UILabel *created_at = (UILabel *)[cell viewWithTag:1];
+    created_at.text = [vote formattedDate];
     
-    cell.textLabel.text = vote.comment;
-    cell.detailTextLabel.text = vote.username;
+    if ( [vote.facebook_auth isKindOfClass:[NSString class]]) {
+        NSData *imageData = [NSData dataWithContentsOfURL:vote.thumbnailURL];
+        UIImage *image = [UIImage imageWithData:imageData];
+        
+        cell.imageView.image = image;
+    } else {
+        cell.imageView.image = [UIImage imageNamed:@"action-people.png"];
+    }
+    
+    cell.textLabel.text = vote.username;
+    cell.detailTextLabel.text = vote.comment;
     
     return cell;
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ( [segue.identifier isEqualToString:@"showVote"]){
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Vote *vote = [self.votesArray objectAtIndex:indexPath.row];
+        
+        ProposalDetailViewController *pdvc = (ProposalDetailViewController *)segue.destinationViewController;
+        NSURL *url_to_carry = [NSURL URLWithString:url];
+        pdvc.proposalURL = url_to_carry;
+        
+    }
+    
 }
 
 

@@ -23,4 +23,26 @@
     return [[self alloc] initWithId:id];
 }
 
+
+- (NSURL *) thumbnailURL {
+    //    NSLog(@"%@",[self.thumbnail class]);
+    // graph.facebook.com/1013711516/picture
+    NSMutableString *pictureString = [NSMutableString stringWithString:@"https://graph.facebook.com/"];
+    
+    
+    [pictureString appendString:self.facebook_auth];
+    [pictureString appendString:@"/picture"];
+    return [NSURL URLWithString:pictureString];
+}
+
+- (NSString *) formattedDate {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"]; //2013-10-04T03:59:38Z
+    NSDate *tempDate = [dateFormatter dateFromString:self.created_at];
+    
+    [dateFormatter setDateFormat:@"EE MMM,dd"];
+    return [dateFormatter stringFromDate:tempDate];
+    
+}
+
 @end
