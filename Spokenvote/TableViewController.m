@@ -152,14 +152,17 @@
         }
         NSNumber *proposal_id = proposal.proposal_id;
         NSString *id_string = [NSString stringWithFormat:@"%@", proposal_id, nil];
-        NSMutableString *url = [NSMutableString stringWithString:@"http://www.spokenvote.org/proposals/"];
-        
-        [url appendString:id_string];
-        [url appendString:@".json"];
-        
+
         ProposalDetailViewController *pdvc = (ProposalDetailViewController *)segue.destinationViewController;
-        NSURL *url_to_carry = [NSURL URLWithString:url];
-        pdvc.proposalURL = url_to_carry;
+        pdvc.proposalId = id_string;
+
+//        NSMutableString *url = [NSMutableString stringWithString:@"http://www.spokenvote.org/proposals/"];
+        
+//        [url appendString:id_string];
+//        [url appendString:@".json"];
+        
+//        NSURL *url_to_carry = [NSURL URLWithString:url];
+//        pdvc.proposalURL = url_to_carry;
     }
     
 }

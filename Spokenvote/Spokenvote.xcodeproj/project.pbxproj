@@ -10,6 +10,7 @@
 		8316AB89180DFB05009499C3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8316AB88180DFB05009499C3 /* FacebookSDK.framework */; };
 		83CB779D181358AA009D1447 /* action-people.png in Resources */ = {isa = PBXBuildFile; fileRef = 83CB779C181358AA009D1447 /* action-people.png */; };
 		83CB77A0181387A4009D1447 /* VoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CB779F181387A4009D1447 /* VoteViewController.m */; };
+		83CB77A31814156C009D1447 /* AltProposalsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CB77A21814156C009D1447 /* AltProposalsDetailViewController.m */; };
 		C2DB1843180908F700A76511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1842180908F700A76511 /* Foundation.framework */; };
 		C2DB1845180908F700A76511 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1844180908F700A76511 /* CoreGraphics.framework */; };
 		C2DB1847180908F700A76511 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB1846180908F700A76511 /* UIKit.framework */; };
@@ -67,6 +68,8 @@
 		83CB779C181358AA009D1447 /* action-people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "action-people.png"; path = "images/action-people.png"; sourceTree = "<group>"; };
 		83CB779E181387A4009D1447 /* VoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteViewController.h; sourceTree = "<group>"; };
 		83CB779F181387A4009D1447 /* VoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoteViewController.m; sourceTree = "<group>"; };
+		83CB77A11814156C009D1447 /* AltProposalsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AltProposalsDetailViewController.h; sourceTree = "<group>"; };
+		83CB77A21814156C009D1447 /* AltProposalsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AltProposalsDetailViewController.m; sourceTree = "<group>"; };
 		C2DB183F180908F700A76511 /* Spokenvote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spokenvote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DB1842180908F700A76511 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C2DB1844180908F700A76511 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -203,6 +206,8 @@
 				C2DB187A18090F1600A76511 /* TableViewController.m */,
 				C2DB1885180955C400A76511 /* ProposalDetailViewController.h */,
 				C2DB1886180955C400A76511 /* ProposalDetailViewController.m */,
+				83CB77A11814156C009D1447 /* AltProposalsDetailViewController.h */,
+				83CB77A21814156C009D1447 /* AltProposalsDetailViewController.m */,
 				C2DB187C1809243300A76511 /* Proposal.h */,
 				C2DB187D1809243300A76511 /* Proposal.m */,
 				C2DB1859180908F700A76511 /* Images.xcassets */,
@@ -377,6 +382,7 @@
 				C2DB1858180908F700A76511 /* Spokenvote.xcdatamodeld in Sources */,
 				C2DB189418098E6500A76511 /* SLViewController.m in Sources */,
 				C2DB1851180908F700A76511 /* main.m in Sources */,
+				83CB77A31814156C009D1447 /* AltProposalsDetailViewController.m in Sources */,
 				83CB77A0181387A4009D1447 /* VoteViewController.m in Sources */,
 				C2DB187B18090F1600A76511 /* TableViewController.m in Sources */,
 				C2DB1887180955C400A76511 /* ProposalDetailViewController.m in Sources */,
