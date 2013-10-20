@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+#define baseJsonURL @"http://www.spokenvote.org/proposals"
+
 @interface Proposal : NSObject
 
+//@property (nonatomic, strong) NSString *baseJsonURL;
 @property (nonatomic, strong) NSNumber *proposal_id;
 @property (nonatomic, strong) NSString *statement;
 @property (nonatomic, strong) NSString *votes_percentage;

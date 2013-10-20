@@ -23,4 +23,8 @@
     return [[self alloc] initWithId:id];
 }
 
+//+ (NSString) baseJsonURL: (NSString *) {
+//    return [[self alloc] NSMutableString stringWithString:@"http://www.spokenvote.org/proposals/"];
+//}
+
 @end

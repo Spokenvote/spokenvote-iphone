@@ -10,6 +10,7 @@
 
 @interface ProposalDetailViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+//@property (strong, nonatomic) NSMutableString *baseJsonURL;
 @property (strong, nonatomic) NSString *proposalId;
 @property (strong, nonatomic) IBOutlet UILabel *proposalStatementLabel;
 @property (strong, nonatomic) IBOutlet UILabel *groupName;

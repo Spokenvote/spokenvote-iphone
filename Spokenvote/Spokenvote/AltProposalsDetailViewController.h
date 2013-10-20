@@ -10,8 +10,8 @@
 
 @interface AltProposalsDetailViewController : UIViewController
 
-@property (strong, nonatomic) NSURL *proposalURL;
-@property (strong, nonatomic) NSURL *proposalId;
+//@property (strong, nonatomic) NSURL *proposalURL;
+@property (strong, nonatomic) NSString *proposalId;
 @property (strong, nonatomic) IBOutlet UILabel *proposalStatementLabel;
 @property (strong, nonatomic) IBOutlet UILabel *groupName;
 @property (strong, nonatomic) IBOutlet UILabel *formatedLocation;

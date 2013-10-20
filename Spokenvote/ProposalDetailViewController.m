@@ -31,13 +31,14 @@
     
     [super viewDidLoad];
     
-    NSMutableString *url = [NSMutableString stringWithString:@"http://www.spokenvote.org/proposals/"];
+    NSMutableString *url = [NSMutableString stringWithString:baseJsonURL];
     
+    [url appendString:@"/"];
     [url appendString:self.proposalId];
     [url appendString:@".json"];
     
     NSURL *proposalListURL = [NSURL URLWithString:url];
-        
+    
     NSData *jsonData = [NSData dataWithContentsOfURL:proposalListURL];
     
     NSError *error = nil;
