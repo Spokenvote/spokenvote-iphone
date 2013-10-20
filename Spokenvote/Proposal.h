@@ -15,6 +15,8 @@
 @property (nonatomic, strong) NSString *votes_percentage;
 @property (nonatomic, strong) NSDictionary *hub;
 @property (nonatomic, strong) NSNumber *votes_count;
+@property (nonatomic, strong) NSNumber *votes_in_tree;
+@property (nonatomic, strong) NSNumber *related_proposals_count;
 @property (nonatomic, strong) NSMutableArray *votes;
 
 // Designated Initializer

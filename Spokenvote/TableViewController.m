@@ -10,6 +10,7 @@
 #import "Proposal.h"
 #import "ProposalDetailViewController.h"
 #import "DetailViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface TableViewController ()
 
@@ -49,19 +50,10 @@
         proposal.hub = [proposalDictionary objectForKey:@"hub"];
        // NSLog(@"%@", proposal.hub);
         proposal.votes_count = [proposalDictionary objectForKey:@"votes_count"];
+        proposal.votes_in_tree = [proposalDictionary objectForKey:@"votes_in_tree"];
+        proposal.related_proposals_count = [proposalDictionary objectForKey:@"related_proposals_count"];
         proposal.votes = [proposalDictionary objectForKey:@"votes"];
         [self.proposals addObject:proposal];
-        
-        
-        
-        /*int proposal_id = [bpDictionary objectForKey:@"id"];
-         NSString *id_string = [NSString stringWithFormat:@"%d", proposal_id];
-         NSMutableString *proposal_url = [NSMutableString stringWithString:@"http://spokenvote.org/proposals"];
-         
-         NSLog(@"%@", proposal_url);
-         [proposal_url appendString:id_string];
-         blogPost.url = [NSURL URLWithString:proposal_url];
-         */
         
     }
 
@@ -106,9 +98,22 @@
     
     //proposal.votes_percentage
     
+    UILabel *votesInTree = (UILabel *)[cell viewWithTag:1];
+    votesInTree.text = [NSString stringWithFormat:@"%@", proposal.votes_in_tree, nil];
+    
+    UILabel *relatedProposalsCount = (UILabel *)[cell viewWithTag:2];
+    relatedProposalsCount.text = [NSString stringWithFormat:@"%@", proposal.related_proposals_count, nil];
+
+    UILabel *votesLabel = (UILabel *)[cell viewWithTag:3];
+    [votesLabel.layer setCornerRadius:3];
+    
+    UILabel *propsLabel = (UILabel *)[cell viewWithTag:4];
+    [propsLabel.layer setCornerRadius:3];
+    //    relatedProposalsCount.text = [NSString stringWithFormat:@"%@", proposal.related_proposals_count, nil];
+    
+
     cell.textLabel.text = proposal.statement;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", short_hub];
-    
     
     return cell;
 }
