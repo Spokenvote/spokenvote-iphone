@@ -27,6 +27,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.facebookImageView.image = self.vote.image;
+    self.username.text = self.vote.username;
+    self.longDate.text = self.vote.longDate;
+    self.supportingComment.text = self.vote.comment;
+    [self.supportingComment sizeToFit];
 }
 
 - (void)didReceiveMemoryWarning

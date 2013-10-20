@@ -35,14 +35,15 @@
     return [NSURL URLWithString:pictureString];
 }
 
-- (NSString *) formattedDate {
+- (void) formattedDate {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"]; //2013-10-04T03:59:38Z
     NSDate *tempDate = [dateFormatter dateFromString:self.created_at];
     
     [dateFormatter setDateFormat:@"EE MMM,dd"];
-    return [dateFormatter stringFromDate:tempDate];
-    
+    self.shortDate = [dateFormatter stringFromDate:tempDate];
+    [dateFormatter setDateFormat:@"MMM dd, yyyy"];
+    self.longDate = [dateFormatter stringFromDate:tempDate];
 }
 
 @end

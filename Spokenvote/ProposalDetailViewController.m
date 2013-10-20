@@ -9,6 +9,7 @@
 #import "ProposalDetailViewController.h"
 #import "Proposal.h"
 #import "Vote.h"
+#import "VoteViewController.h"
 
 @interface ProposalDetailViewController ()
 
@@ -102,17 +103,18 @@
     Vote *vote = [self.votesArray objectAtIndex:indexPath.row];
     
     UILabel *created_at = (UILabel *)[cell viewWithTag:1];
-    created_at.text = [vote formattedDate];
+    [vote formattedDate];
+    created_at.text = vote.shortDate;
     
     if ( [vote.facebook_auth isKindOfClass:[NSString class]]) {
         NSData *imageData = [NSData dataWithContentsOfURL:vote.thumbnailURL];
         UIImage *image = [UIImage imageWithData:imageData];
         
-        cell.imageView.image = image;
+        vote.image = image;
     } else {
-        cell.imageView.image = [UIImage imageNamed:@"action-people.png"];
+        vote.image = [UIImage imageNamed:@"action-people.png"];
     }
-    
+    cell.imageView.image = vote.image;
     cell.textLabel.text = vote.username;
     cell.detailTextLabel.text = vote.comment;
     
@@ -125,10 +127,8 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         Vote *vote = [self.votesArray objectAtIndex:indexPath.row];
         
-        ProposalDetailViewController *pdvc = (ProposalDetailViewController *)segue.destinationViewController;
-        NSURL *url_to_carry = [NSURL URLWithString:url];
-        pdvc.proposalURL = url_to_carry;
-        
+        VoteViewController *voteViewController = (VoteViewController *)segue.destinationViewController;
+        voteViewController.vote = vote;
     }
     
 }
