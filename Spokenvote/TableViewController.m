@@ -47,9 +47,8 @@
         Proposal *proposal = [Proposal proposalWithId:[proposalDictionary objectForKey:@"id"]];
         proposal.statement = [proposalDictionary objectForKey:@"statement"];
         proposal.votes_percentage = [proposalDictionary objectForKey:@"votes_percentage"];
-       // NSLog(@"%@", proposal.votes_percentage);
         proposal.hub = [proposalDictionary objectForKey:@"hub"];
-       // NSLog(@"%@", proposal.hub);
+        proposal.short_hub = [proposal.hub objectForKey:@"short_hub"];
         proposal.votes_count = [proposalDictionary objectForKey:@"votes_count"];
         proposal.votes_in_tree = [proposalDictionary objectForKey:@"votes_in_tree"];
         proposal.related_proposals_count = [proposalDictionary objectForKey:@"related_proposals_count"];
@@ -106,8 +105,6 @@
         proposal = [self.proposals objectAtIndex:indexPath.row];
     }
     
-    NSDictionary *hubDictionary = proposal.hub;
-    NSString *short_hub = [hubDictionary objectForKey:@"short_hub"];
     
     //proposal.votes_percentage
     
@@ -126,7 +123,7 @@
     
 
     cell.textLabel.text = proposal.statement;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", short_hub];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", proposal.short_hub];
     
     return cell;
 }
@@ -160,6 +157,13 @@
     // Filter the array using NSPredicate
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.statement contains[c] %@",searchText];
     self.filteredProposalsArray = [NSMutableArray arrayWithArray:[self.proposals filteredArrayUsingPredicate:predicate]];
+    
+    if (![scope isEqualToString:@"Proposal"]) {
+        // Further filter the array with the scope
+        //NSString *groupName = [hub objectForKey:@"group_name"];
+        predicate = [NSPredicate predicateWithFormat:@"SELF.short_hub contains[c] %@",searchText];
+        self.filteredProposalsArray = [NSMutableArray arrayWithArray:[self.proposals filteredArrayUsingPredicate:predicate]];
+    }
 }
 
 #pragma mark - UISearchDisplayController Delegate Methods
