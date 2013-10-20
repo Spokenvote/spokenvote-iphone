@@ -38,6 +38,7 @@
     NSError *error = nil;
     
     NSArray *proposalsArray = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
+    self.filteredProposalsArray = [NSMutableArray arrayWithCapacity:[proposalsArray count]];
     
     self.proposals = [NSMutableArray array];
     
@@ -83,15 +84,27 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.proposals count];
+    
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        return [self.filteredProposalsArray count];
+    } else {
+        return [self.proposals count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    Proposal *proposal = [self.proposals objectAtIndex:indexPath.row];
+    Proposal *proposal;
+    
+    // Check to see whether the normal table or search results table is being displayed and set the Candy object from the appropriate array
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        proposal = [self.filteredProposalsArray objectAtIndex:indexPath.row];
+    } else {
+        proposal = [self.proposals objectAtIndex:indexPath.row];
+    }
     
     NSDictionary *hubDictionary = proposal.hub;
     NSString *short_hub = [hubDictionary objectForKey:@"short_hub"];
@@ -139,6 +152,39 @@
     
 }
 
+#pragma mark Content Filtering
+-(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
+    // Update the filtered array based on the search text and scope.
+    // Remove all objects from the filtered search array
+    [self.filteredProposalsArray removeAllObjects];
+    // Filter the array using NSPredicate
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.statement contains[c] %@",searchText];
+    self.filteredProposalsArray = [NSMutableArray arrayWithArray:[self.proposals filteredArrayUsingPredicate:predicate]];
+}
+
+#pragma mark - UISearchDisplayController Delegate Methods
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
+    // Tells the table data source to reload when text changes
+    [self filterContentForSearchText:searchString scope:
+     [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    // Return YES to cause the search result table view to be reloaded.
+    return YES;
+}
+
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption {
+    // Tells the table data source to reload when scope bar selection changes
+    [self filterContentForSearchText:self.searchDisplayController.searchBar.text scope:
+     [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:searchOption]];
+    // Return YES to cause the search result table view to be reloaded.
+    return YES;
+}
+
+
+-(void)searchDisplayController:(UISearchDisplayController *)controller didShowSearchResultsTableView:(UITableView *)tableView
+{
+    tableView.rowHeight = 97;
+    
+}
 
 /*
 // Override to support conditional editing of the table view.

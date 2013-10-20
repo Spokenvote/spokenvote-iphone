@@ -13,9 +13,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Type to find or create your group." id="HxF-Ue-qGn">
+                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="Co5-Pj-M91" id="r3y-Oy-pVV"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="OG6-KG-joj" detailTextLabel="bCi-gE-346" rowHeight="97" style="IBUITableViewCellStyleSubtitle" id="bDv-CF-6tO">
-                                <rect key="frame" x="0.0" y="86" width="320" height="97"/>
+                                <rect key="frame" x="0.0" y="130" width="320" height="97"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bDv-CF-6tO" id="sio-9f-I4X">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="96"/>
@@ -76,8 +84,21 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="3e3-ai-WOu"/>
+                    <connections>
+                        <outlet property="proposalSearchBar" destination="HxF-Ue-qGn" id="iNz-EP-7db"/>
+                        <outlet property="searchDisplayController" destination="gBk-GW-pbm" id="FbW-tC-2px"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uR-FD-ZfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="gBk-GW-pbm">
+                    <connections>
+                        <outlet property="delegate" destination="Co5-Pj-M91" id="RXj-IS-gkV"/>
+                        <outlet property="searchBar" destination="HxF-Ue-qGn" id="5V1-KS-d67"/>
+                        <outlet property="searchContentsController" destination="Co5-Pj-M91" id="5eL-9E-3BB"/>
+                        <outlet property="searchResultsDataSource" destination="Co5-Pj-M91" id="fOU-3h-v4t"/>
+                        <outlet property="searchResultsDelegate" destination="Co5-Pj-M91" id="Yjb-iv-aaF"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="335" y="-964"/>
         </scene>

@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewController : UITableViewController
+//@interface TableViewController : UITableViewController
+@interface TableViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate>
+
+@property (strong,nonatomic) NSMutableArray *filteredProposalsArray;
 
 @property (strong, nonatomic) NSMutableArray *proposals;
+@property (strong, nonatomic) IBOutlet UISearchBar *proposalSearchBar;
 
 @end
