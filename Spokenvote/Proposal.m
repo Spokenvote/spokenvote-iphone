@@ -12,8 +12,7 @@
 
 - (id) initWithId: (NSNumber *) id {
     self = [super init];
-    
-    if ( self ){
+    if ( self ) {
         self.proposal_id = id;
     }
     
@@ -23,5 +22,9 @@
 + (id) proposalWithId: (NSNumber *) id {
     return [[self alloc] initWithId:id];
 }
+
+//+ (NSString) baseJsonURL: (NSString *) {
+//    return [[self alloc] NSMutableString stringWithString:@"http://www.spokenvote.org/proposals/"];
+//}
 
 @end
