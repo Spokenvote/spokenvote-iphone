@@ -31,6 +31,7 @@
     
     [super viewDidLoad];
     
+    // Construct url; for proposalID = 84, we have http://www.spokenvote.org/proposals/84.json
     NSMutableString *url = [NSMutableString stringWithString:baseJsonURL];
     
     [url appendString:@"/"];
@@ -51,16 +52,11 @@
     proposal.votes_count = [proposalDetail objectForKey:@"votes_count"];
     proposal.votes = [proposalDetail objectForKey:@"votes"]; // an array of dictionary, which represents a vote
     
-    self.proposalStatementLabel.text = proposal.statement;
+    // Set text value for Label outlets
+    self.proposalStatement.text = proposal.statement;
     self.groupName.text = [proposal.hub objectForKey:@"group_name"];
     self.formatedLocation.text = [proposal.hub objectForKey:@"formatted_location"];
-    
-    NSMutableString *votesCountString = [NSMutableString stringWithString:@"("];
-    NSString *votesNum = [NSString stringWithFormat:@"%@", proposal.votes_count, nil];
-    [votesCountString appendString:votesNum];
-    [votesCountString appendString:@" Votes)"];
-
-    self.votesCount.text = votesCountString;
+    self.votesCount.text = [NSString stringWithFormat:@"%@ Votes", proposal.votes_count];
 
     // Set up array of Vote objects
     self.votesArray = [NSMutableArray array];
@@ -74,9 +70,42 @@
         
         [self.votesArray addObject:vote];
     }
+    [self setUpAlternateTableView];
 }
 
+- (void) setUpAlternateTableView
+{
+    self.alternateTableView.rowHeight = 90;
+    self.alternateProposals = [NSMutableArray array];
+    // Construct url; for proposalID = 84, we have http://www.spokenvote.org/proposals/84.json
+    NSMutableString *url = [NSMutableString stringWithString:baseJsonURL];
+    
+    [url appendString:@"/"];
+    [url appendString:self.proposalId];
+    [url appendString:@"/related_proposals.json"];
+    
+    NSURL *proposalListURL = [NSURL URLWithString:url];
+    
+    NSData *jsonData = [NSData dataWithContentsOfURL:proposalListURL];
+    
+    NSError *error = nil;
+    
+    NSDictionary *alternateDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
 
+    // value for "related_proposals" key is an array of dictionaries
+    for (NSDictionary *alternateProposalDictionary in [alternateDictionary objectForKey:@"related_proposals"]) {
+        
+        Proposal *alternateProposal = [Proposal proposalWithId:[alternateProposalDictionary objectForKey:@"id"]];
+        alternateProposal.statement = [alternateProposalDictionary objectForKey:@"statement"];
+        alternateProposal.hub = [alternateProposalDictionary objectForKey:@"hub"];
+        alternateProposal.user = [alternateProposalDictionary objectForKey:@"user"];
+        alternateProposal.votes_count = [alternateProposalDictionary objectForKey:@"votes_count"];
+        // votes is an array of dictionaries, each dictionary is a vote
+        alternateProposal.votes = [alternateProposalDictionary objectForKey:@"votes"];
+        [self.alternateProposals addObject:alternateProposal];
+    }
+   
+}
 
 #pragma mark - Table view data source
 
@@ -89,7 +118,11 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.votesArray count];
+    if ([tableView isEqual:self.supportTableView]) {
+        return [self.votesArray count];
+    } else {
+        return [self.alternateProposals count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -97,23 +130,30 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    Vote *vote = [self.votesArray objectAtIndex:indexPath.row];
+    if ([tableView isEqual:self.supportTableView]) {
     
-    UILabel *created_at = (UILabel *)[cell viewWithTag:1];
-    [vote formattedDate];
-    created_at.text = vote.shortDate;
+        Vote *vote = [self.votesArray objectAtIndex:indexPath.row];
     
-    if ( [vote.facebook_auth isKindOfClass:[NSString class]]) {
-        NSData *imageData = [NSData dataWithContentsOfURL:vote.thumbnailURL];
-        UIImage *image = [UIImage imageWithData:imageData];
+        UILabel *created_at = (UILabel *)[cell viewWithTag:1];
+        [vote formattedDate];
+        created_at.text = vote.shortDate;
+    
+        if ( [vote.facebook_auth isKindOfClass:[NSString class]]) {
+            NSData *imageData = [NSData dataWithContentsOfURL:vote.thumbnailURL];
+            UIImage *image = [UIImage imageWithData:imageData];
         
-        vote.image = image;
+            vote.image = image;
+        } else {
+            vote.image = [UIImage imageNamed:@"action-people.png"];
+        }
+        cell.imageView.image = vote.image;
+        cell.textLabel.text = vote.username;
+        cell.detailTextLabel.text = vote.comment;
     } else {
-        vote.image = [UIImage imageNamed:@"action-people.png"];
+        Proposal *alternateProposal = [self.alternateProposals objectAtIndex:indexPath.row];
+        cell.textLabel.text = alternateProposal.statement;
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ Votes",alternateProposal.votes_count];
     }
-    cell.imageView.image = vote.image;
-    cell.textLabel.text = vote.username;
-    cell.detailTextLabel.text = vote.comment;
     
     return cell;
 }
@@ -121,7 +161,7 @@
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ( [segue.identifier isEqualToString:@"showVote"]){
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSIndexPath *indexPath = [self.supportTableView indexPathForSelectedRow];
         Vote *vote = [self.votesArray objectAtIndex:indexPath.row];
         
         VoteViewController *voteViewController = (VoteViewController *)segue.destinationViewController;
@@ -157,9 +197,9 @@
 - (IBAction)toggleControls:(UISegmentedControl *)sender {
     if (sender.selectedSegmentIndex == 0) {
         self.alternateTableView.hidden = YES;
-        self.tableView.hidden = NO;
+        self.supportTableView.hidden = NO;
     } else {
-        self.tableView.hidden = YES;
+        self.supportTableView.hidden = YES;
         self.alternateTableView.hidden = NO;
     }
 }

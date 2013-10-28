@@ -21,4 +21,6 @@
 @property (strong, nonatomic) NSMutableArray *votesArray;
 
 
+
+
 @end

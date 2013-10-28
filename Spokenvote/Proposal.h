@@ -22,6 +22,7 @@
 @property (nonatomic, strong) NSNumber *votes_in_tree;
 @property (nonatomic, strong) NSNumber *related_proposals_count;
 @property (nonatomic, strong) NSMutableArray *votes;
+@property (nonatomic, strong) NSDictionary *user;
 
 // Designated Initializer
 - (id) initWithId: (NSNumber *) id;
