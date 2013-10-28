@@ -168,22 +168,15 @@
         voteViewController.vote = vote;
     }
     
-    /*if ( [segue.identifier isEqualToString:@"showAlternateProposal"]){
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        Proposal *proposal =  [self.proposals objectAtIndex:indexPath.row];
+    if ( [segue.identifier isEqualToString:@"showAlternateProposal"]){
+        NSIndexPath *indexPath = [self.alternateTableView indexPathForSelectedRow];
+        Proposal *proposal =  [self.alternateProposals objectAtIndex:indexPath.row];
         NSNumber *proposal_id = proposal.proposal_id;
         NSString *id_string = [NSString stringWithFormat:@"%@", proposal_id, nil];
         
         ProposalDetailViewController *pdvc = (ProposalDetailViewController *)segue.destinationViewController;
         pdvc.proposalId = id_string;
-        
-        
-//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//        Proposal *proposal = [self.votesArray objectAtIndex:indexPath.row];
-//        
-//        VoteViewController *voteViewController = (VoteViewController *)segue.destinationViewController;
-//        voteViewController.vote = vote;
-    } */
+    } 
 }
 
 
