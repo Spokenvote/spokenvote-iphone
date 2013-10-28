@@ -150,6 +150,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2CD6DEF181E3D6100687A69 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C2FD708A1809D09C00FA740A /* home_35px.png */,
+				C2FD708B1809D09C00FA740A /* magnifying-glass_@2x.png */,
+				C2FD708C1809D09C00FA740A /* magnifying-glass_35px.png */,
+				C2DB188A1809891000A76511 /* Default-568h@2x.png */,
+				C2DB188D1809892600A76511 /* Default@2x.png */,
+				C2DB188C1809892600A76511 /* Default.png */,
+				83CB779C181358AA009D1447 /* action-people.png */,
+				C2DB18971809AF2800A76511 /* fbimage.png */,
+				C2FD707D1809C82000FA740A /* sv-icon.png */,
+				C2FD708D1809D09C00FA740A /* plus_@2x.png */,
+				C2FD708E1809D09C00FA740A /* plus_35px.png */,
+				C2FD70841809CD7C00FA740A /* intro.png */,
+				C2FD70801809CA1B00FA740A /* sv-logo_80x80.png */,
+				C2FD70891809D09C00FA740A /* home_35px (1).png */,
+				C2FD70881809D09C00FA740A /* home_@2x.png */,
+				C2FD70871809D09C00FA740A /* gear_35px.png */,
+				C2FD70861809D09C00FA740A /* gear_@2x.png */,
+				C2FD707C1809C82000FA740A /* sv_icon@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		C2DB1836180908F700A76511 = {
 			isa = PBXGroup;
 			children = (
@@ -188,18 +213,7 @@
 		C2DB184A180908F700A76511 /* Spokenvote */ = {
 			isa = PBXGroup;
 			children = (
-				C2FD707C1809C82000FA740A /* sv_icon@2x.png */,
-				C2FD70861809D09C00FA740A /* gear_@2x.png */,
-				C2FD70871809D09C00FA740A /* gear_35px.png */,
-				C2FD70881809D09C00FA740A /* home_@2x.png */,
-				C2FD70891809D09C00FA740A /* home_35px (1).png */,
-				C2FD708A1809D09C00FA740A /* home_35px.png */,
-				C2FD708B1809D09C00FA740A /* magnifying-glass_@2x.png */,
-				C2FD708C1809D09C00FA740A /* magnifying-glass_35px.png */,
-				C2FD708D1809D09C00FA740A /* plus_@2x.png */,
-				C2FD708E1809D09C00FA740A /* plus_35px.png */,
-				C2FD70841809CD7C00FA740A /* intro.png */,
-				C2FD70801809CA1B00FA740A /* sv-logo_80x80.png */,
+				C2DB187718090A4B00A76511 /* MainStoryboard.storyboard */,
 				C2DB1853180908F700A76511 /* AppDelegate.h */,
 				C2DB1854180908F700A76511 /* AppDelegate.m */,
 				C2DB187918090F1600A76511 /* TableViewController.h */,
@@ -208,18 +222,6 @@
 				C2DB1886180955C400A76511 /* ProposalDetailViewController.m */,
 				83CB77A11814156C009D1447 /* AltProposalsDetailViewController.h */,
 				83CB77A21814156C009D1447 /* AltProposalsDetailViewController.m */,
-				C2DB187C1809243300A76511 /* Proposal.h */,
-				C2DB187D1809243300A76511 /* Proposal.m */,
-				C2DB1859180908F700A76511 /* Images.xcassets */,
-				C2DB1856180908F700A76511 /* Spokenvote.xcdatamodeld */,
-				C2DB188A1809891000A76511 /* Default-568h@2x.png */,
-				C2DB188D1809892600A76511 /* Default@2x.png */,
-				C2DB188C1809892600A76511 /* Default.png */,
-				83CB779C181358AA009D1447 /* action-people.png */,
-				C2DB18971809AF2800A76511 /* fbimage.png */,
-				C2FD707D1809C82000FA740A /* sv-icon.png */,
-				C2DB184B180908F700A76511 /* Supporting Files */,
-				C2DB187718090A4B00A76511 /* MainStoryboard.storyboard */,
 				C2FD70981809D6AB00FA740A /* DetailViewController.h */,
 				C2FD70991809D6AB00FA740A /* DetailViewController.m */,
 				C2DB187F1809278B00A76511 /* Vote.h */,
@@ -228,6 +230,12 @@
 				C2DB189318098E6500A76511 /* SLViewController.m */,
 				83CB779E181387A4009D1447 /* VoteViewController.h */,
 				83CB779F181387A4009D1447 /* VoteViewController.m */,
+				C2DB187C1809243300A76511 /* Proposal.h */,
+				C2DB187D1809243300A76511 /* Proposal.m */,
+				C2DB1859180908F700A76511 /* Images.xcassets */,
+				C2DB1856180908F700A76511 /* Spokenvote.xcdatamodeld */,
+				C2CD6DEF181E3D6100687A69 /* images */,
+				C2DB184B180908F700A76511 /* Supporting Files */,
 			);
 			path = Spokenvote;
 			sourceTree = "<group>";

@@ -10,14 +10,20 @@
 
 @interface ProposalDetailViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-//@property (strong, nonatomic) NSMutableString *baseJsonURL;
 @property (strong, nonatomic) NSString *proposalId;
-@property (strong, nonatomic) IBOutlet UILabel *proposalStatementLabel;
 @property (strong, nonatomic) IBOutlet UILabel *groupName;
+@property (strong, nonatomic) IBOutlet UILabel *proposalStatement;
 @property (strong, nonatomic) IBOutlet UILabel *formatedLocation;
-@property (strong, nonatomic) IBOutlet UILabel *votesCount;
 
-@property (strong, nonatomic) IBOutlet UITableView *tableView;
+// Outlets and Properties for supportTableView (aka. tableView)
+@property (strong, nonatomic) IBOutlet UITableView *supportTableView;
+@property (strong, nonatomic) IBOutlet UILabel *votesCount;
 @property (strong, nonatomic) NSMutableArray *votesArray;
+
+// Outlet for alternateTableView
+@property (strong, nonatomic) IBOutlet UITableView *alternateTableView;
+@property (strong, nonatomic) NSMutableArray *alternateProposals;
+
+- (IBAction)toggleControls:(UISegmentedControl *)sender;
 
 @end
