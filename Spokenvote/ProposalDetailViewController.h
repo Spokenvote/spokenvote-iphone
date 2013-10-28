@@ -12,12 +12,16 @@
 
 //@property (strong, nonatomic) NSMutableString *baseJsonURL;
 @property (strong, nonatomic) NSString *proposalId;
+
 @property (strong, nonatomic) IBOutlet UILabel *proposalStatementLabel;
 @property (strong, nonatomic) IBOutlet UILabel *groupName;
 @property (strong, nonatomic) IBOutlet UILabel *formatedLocation;
 @property (strong, nonatomic) IBOutlet UILabel *votesCount;
 
+- (IBAction)toggleControls:(UISegmentedControl *)sender;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UITableView *alternateTableView;
+
 @property (strong, nonatomic) NSMutableArray *votesArray;
 
 @end

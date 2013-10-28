@@ -153,4 +153,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)toggleControls:(UISegmentedControl *)sender {
+    if (sender.selectedSegmentIndex == 0) {
+        self.alternateTableView.hidden = YES;
+        self.tableView.hidden = NO;
+    } else {
+        self.tableView.hidden = YES;
+        self.alternateTableView.hidden = NO;
+    }
+}
 @end
